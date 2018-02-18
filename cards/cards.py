@@ -1,107 +1,150 @@
 # the purpose of this program is to lay the foundations to which our
 # games and language can be built upon.
-
 import random
 
-
-suits = ["hearts", "spades", "clubs", "diamonds"]
+suits = ["Hearts", "Spades", "Clubs", "Diamonds"]
 possibleValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 
-# how do we represent a rule?
-class Rule:
-
-
-class Player:
-    # the turn will indicate whether the player can interact with the
-    # game or not.
-    turn = False
-
-    # players start out with an empty hand
-    hand = Hand()
-    def __init__(self):
-        pass
-
-
 class Card:
-    value = None
+    rank = None
     suit = None
+    visible = True
+    isRed = True
 
-    def __init__(self, value, suit):
-        self.value = value
+    def __init__(self, rank, suit, visible):
+        self.rank = rank
         self.suit = suit
+        self.visible = visible
+        if suit == "Hearts" or suit == "Diamonds":
+            self.isRed = True
+        else:
+            self.isRed = False
 
     def __repr__(self):
-        return value + " of " + suit
+        if self.visible:
+            return rank + suit[0]
+        else:
+            return "[ ]"
 
 # standard 52 card deck. We may want to add methods or variables
 # for containing Jokers or other stuff.
 class Deck:
-
-    cards = []
+    listOfCards = []
 
     def __init__(self):
         for suit in suits:
             for value in possibleValues:
-                cards.append( Card(value, suit) )
+                self.listOfCards.append( Card(value, suit, False) )
 
     def __repr__(self):
-        return str(cards)
+        return self.listOfCards
 
     # shuffles the deck of cards. Keep in mind the random
     # function for shuffling sorts in place and returns
     # nothing.
     def shuffle(self):
-        random.shuffle(cards)
+        random.shuffle(self.listOfCards)
 
-# for our sakes, a pile is a visible or invisible stack of cards
-# who is owned by no player.
+    # distributes a certain number of cards to each player
+    def distributeCardsToPlayers(self, howManyEach, players):
+        for player in players:
+            for card in howManyEach:
+                player.receiveCard(self.listOfCards.pop())
+
+    # distinction between players and piles:
+    # Piles have an unknown amount of cards per pile.
+    # input will be a list of integers that each pile should
+    # have and return the list of piles
+    # this will be used to create a board.
+    def distributeCardsToPiles(self, howMany):
+        listOfPiles = []
+        # iterate through list of integers
+        # ex. [1, 2, 3, 4, 5, 6, 7, 0, 0, 0, 0, 0, 24] for solitaire
+        for pileAmount in howMany:
+            pile = Pile([], None)
+            for i in range(pileAmount):
+                pile.receiveCard( self.listOfCards.pop() )
+            listOfPiles.append(pile)
+        return listOfPiles
+
+
+# this is the highest point of the model. Refer to UML in git.
+class Game:
+    goal = ""
+    listOfPlayers = []
+    deck = Deck()
+    board = None
+
+    def __init__(self, goal, listOfPlayers):
+        self.goal = goal
+        self.listOfPlayers = listOfPlayers
+
+    def __repr__(self):
+        return self.goal + self.listOfPlayers + self.board
+
+
+# this is meant to be a generator of possible moves.
+# to be inherited and implemented in game-specific code.
+class RuleBook:
+    def getAllPossibleMoves(self):
+        raise NotImplementedError
+
+
+# for our sakes, a pile is a stack of cards
+# who is owned by no player. Each pile also
+# has a set of rules, or list of playable moves
 class Pile:
     cards = []
-    visible = False
+    ruleBook = RuleBook()
 
-    def __init__(self, cards, visible):
+    def __init__(self, cards, ruleBook):
         self.cards = cards
-        self.visible = visible
+        self.ruleBook = ruleBook
 
-    def pickUpCard(self):
-        return cards.pop()
+    def receiveCard(self, card):
+        self.cards.append(card)
 
-    def placeCard(self, card):
-        cards.append(card)
+    def getTop(self):
+        return self.cards[-1]
+    def getContents(self):
+        return self.cards
 
-     
-class Hand:
-    cards = []
+class Hand(Pile):
+    owner = None
+
     def __repr__(self):
-        return str(cards)
-    def __init__(self, cards):
-        self.cards = cards
-    def placeCard(self, card, pile):
-        pile.placeCard(card)
-        cards.remove(card)
-    def pickUpCard(self, pile):
-        cards.append( pile.pickUpCard())
+        return self.getCards()
+    def __init__(self, owner, cards, rulebook):
+        self.owner = owner
+        Pile.__init__(self, cards, rulebook)
+
+class Player:
+    # players start out with an empty hand
+    hand = None
+    def __init__(self, hand):
+        self.hand = hand
+
+    def receiveCard(self, card):
+        hand.receiveCard(card)
 
 
-# this was in menzies notes... but what is it?
+class Board:
+    setOfPiles = []
+    def __init__(self, setOfPiles):
+        self.setOfPiles = setOfPiles
+    # boards are game specific.
+    def printBoard(self):
+        raise NotImplementedError
+    def printPossibleMoves(self):
+        raise NotImplementedError
+
 class Play:
+    currentPlayer = None
+    listOfPiles = []
+    def __init__(self, currentPlayer, listOfPiles):
+        self.currentPlayer = currentPlayer
+        self.listOfPiles = listOfPiles
 
-# how do we represent a goal?
-class Goal:
-
-
-class Game:
-    goal = Goal()
-
-    # every game has a set of piles... may be empty
-    piles = []
-    
-    # whether the game is finished or not
-    isFinished = False
-
-    # Which player is the winner
-    winner = None
-
-    rules = []
-
+    def getAllPossibleMoves(self):
+        raise NotImplementedError
 
