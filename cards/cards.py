@@ -22,9 +22,9 @@ class Card:
 
     def __repr__(self):
         if self.visible:
-            return self.rank + self.suit[0]
+            return "%4s" % ("" + self.rank + self.suit[0])
         else:
-            return "[ ]"
+            return "%4s" % "[ ]"
 
 # standard 52 card deck. We may want to add methods or variables
 # for containing Jokers or other stuff.
