@@ -22,7 +22,7 @@ class Card:
 
     def __repr__(self):
         if self.visible:
-            return rank + suit[0]
+            return self.rank + self.suit[0]
         else:
             return "[ ]"
 
@@ -67,7 +67,6 @@ class Deck:
             listOfPiles.append(pile)
         return listOfPiles
 
-
 # this is the highest point of the model. Refer to UML in git.
 class Game:
     goal = ""
@@ -89,13 +88,14 @@ class RuleBook:
     def getAllPossibleMoves(self):
         raise NotImplementedError
 
-
 # for our sakes, a pile is a stack of cards
 # who is owned by no player. Each pile also
 # has a set of rules, or list of playable moves
 class Pile:
     cards = []
     ruleBook = RuleBook()
+    def __repr__(self):
+        return str([card for card in self.cards])
 
     def __init__(self, cards, ruleBook):
         self.cards = cards
@@ -106,9 +106,31 @@ class Pile:
 
     def getTop(self):
         return self.cards[-1]
+
     def getContents(self):
         return self.cards
+    
+    # this function will give one card from one pile to 
+    # another pile. Useful when flipping one card over or
+    # picking up a card from the center pile into a hand.
+    def giveOneCard(self, otherPile):
+        otherPile.receiveCard(self.cards.pop())
 
+    # This function will give every card from [indexToGive] to 
+    # the end of the list. Useful for instances like solitaire.
+    def giveSetOfCards(self, indexToGive, otherPile):
+        remainingCards = len(self.cards) - indexToGive
+        for i in range(remainingCards):
+            otherPile.receiveCard(self.cards.pop(indexToGive))
+
+    def makeAllCardsInvisible(self):
+        for card in self.cards:
+            card.visible = False
+
+    def makeAllCardsVisible(self):
+        for card in self.cards:
+            card.visible = True
+        
 class Hand(Pile):
     owner = None
 
@@ -126,7 +148,6 @@ class Player:
 
     def receiveCard(self, card):
         hand.receiveCard(card)
-
 
 class Board:
     setOfPiles = []
