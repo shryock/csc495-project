@@ -6,15 +6,15 @@ class SolitaireRulebook(RuleBook):
         needs = self.getNeeds(board)
         plays = self.getPlays(board)
 
-        moves = [(play[0], play[1], need[1]) for play in plays for need in needs if play[0] == need[0] and play[1] != need[1]]
+        moves = [Move(play.id, play.pile, need.pile) for play in plays for need in needs if need.accepts(play)]
 
         if not moves:
             future = self.getFuturePlays(board.waste.cards + board.stock.cards)
-            futureMoves = [(play[0], play[1], need[1]) for play in future for need in needs if play[0] == need[0]]
+            futureMoves = [Move(play.id, play.id, need.id) for play in future for need in needs if need.accepts(play)]
             if not futureMoves:
                 return []
 
-        readableMoves = [("Move %s from %s to %s" % move, 0) for move in moves]
+        readableMoves = [(repr(move), 0) for move in moves]
 
         readableMoves += [("Show %s" % stack.name, 1) for stack in board.stacks if len(stack) and not stack.top().visible]
 
@@ -40,19 +40,30 @@ class SolitaireRulebook(RuleBook):
             return []
         else:
             nextRank = ranks[ranks.index(stack.top().rank) - 1]
-            return self.allSuits(nextRank, stack.name)
+            return self.allColor(nextRank, stack.top().isRed, stack.name)
 
     def getSuitPileNeeds(self, pile):
         if not len(pile):
-            return [("1%s" % pile.name[0], pile.name)]
+            return [PlayableCard("1%s" % pile.name[0], True, pile.name)]
         elif pile.top().rank == ranks[-1]:
             return []
         else:
             nextRank = ranks[ranks.index(pile.top().rank) + 1]
-            return [(nextRank, pile.name)]
+            return [PlayableCard(nextRank + pile.name[0], True, pile.name)]
 
     def allSuits(self, rank, name):
-        return [(rank + suit[0], name) for suit in suits]
+        return [PlayableCard(rank + suit[0], None, name) for suit in suits]
+
+    def allColor(self, rank, isRed, name):
+        return self.allBlack(rank, name) if isRed else self.allRed(rank, name)
+
+    def allRed(self, rank, name):
+        redSuits = ["Hearts", "Diamonds"]
+        return [PlayableCard(rank + suit[0], None, name) for suit in redSuits]
+
+    def allBlack(self, rank, name):
+        blackSuits = ["Spades", "Clubs"]
+        return [PlayableCard(rank + suit[0], None, name) for suit in blackSuits]
 
     def getPlays(self, board):
         cards  = [self.getStackPlays(stack) for stack in board.stacks]
@@ -61,10 +72,49 @@ class SolitaireRulebook(RuleBook):
         return cards
 
     def getStackPlays(self, stack):
-        return [(card.rank + card.suit[0], stack.name) for card in stack if card.visible]
+        cards = []
+        for card in stack:
+            if card.visible:
+                if card == stack.top():
+                    cards += [PlayableCard(card.rank + card.suit[0], True, stack.name)]
+                else:
+                    cards += [PlayableCard(card.rank + card.suit[0], False, stack.name)]
+        return cards
 
     def getWastePlays(self, pile):
-        return [(pile.top().rank + pile.top().suit[0], pile.name)] if len(pile) else []
+        return [PlayableCard(pile.top().rank + pile.top().suit[0], True, pile.name)] if len(pile) else []
 
     def getFuturePlays(self, pile):
-        return [(card.rank + card.suit[0], "Future") for card in pile]
+        return [PlayableCard(card.rank + card.suit[0], True, "Future") for card in pile]
+
+
+class PlayableCard(object):
+    def __init__(self, id, top, pile):
+        self.id = id
+        self.top = top
+        self.pile = pile
+
+    def __repr__(self):
+        return "{id: %s, top: %s, pile: %s}" % (self.id, self.top, self.pile)
+
+    def accepts(self, other):
+        if not isinstance(other, PlayableCard):
+            return False
+        elif self.id != other.id:
+            return False
+        elif self.pile == other.pile:
+            return False
+        elif self.top == None or other.top == None:
+            return True
+        else:
+            return self.top == other.top
+
+
+class Move(object):
+    def __init__(self, card, start, end):
+        self.card = card
+        self.start = start
+        self.end = end
+
+    def __repr__(self):
+        return "Move %s from %s to %s" % (self.card, self.start, self.end)

@@ -18,27 +18,33 @@ class Solitaire(Game):
         self.board = SolitaireBoard(self.piles)
         self.rulebook = SolitaireRulebook()
 
+        self.moveCount = 0
+
     def play(self):
-        moves = self.rulebook.getAllPossibleMoves(self.board)
-        while moves:
-            print(repr(self.board), end="\n\n")
-            print(self.getMoveDialogue(moves))
-            nextMove = input("Choose your next move: ")
-
-            while True:
-                try:
-                    index = int(nextMove)
-                    if index > len(moves) or index <= 0:
-                        raise ValueError
-                    else:
-                        break
-                except ValueError:
-                    nextMove = input("Choose your next move: ")
-
-            self.executeMove(moves[index - 1])
-            print("\n")
+        try:
             moves = self.rulebook.getAllPossibleMoves(self.board)
-        print("Game Over")
+            while moves:
+                print(repr(self.board), end="\n\n")
+                print(self.getMoveDialogue(moves))
+                nextMove = input("Choose your next move: ")
+
+                while True:
+                    try:
+                        index = int(nextMove)
+                        if index > len(moves) or index <= 0:
+                            raise ValueError
+                        else:
+                            break
+                    except ValueError:
+                        nextMove = input("Choose your next move: ")
+
+                self.executeMove(moves[index - 1])
+                self.moveCount += 1
+                print("\n")
+                moves = self.rulebook.getAllPossibleMoves(self.board)
+            print("Game Over")
+        except (KeyboardInterrupt, QuitException):
+            print("\nGame Exited")
 
     def getMoveDialogue(self, moves):
         return "\n".join(["%d. %s" % (i + 1, moves[i][0]) for i in range(len(moves))])
@@ -54,8 +60,7 @@ class Solitaire(Game):
         elif move[1] == RESHUFFLE:
             self.reshuffle()
         elif move[1] == QUIT:
-            # CHANGE TO QUIT ERROR
-            raise ValueError
+            raise QuitException
         else:
             raise ValueError
 
@@ -90,6 +95,8 @@ class Solitaire(Game):
         self.board.waste.cards.reverse()
         self.board.waste.giveSetOfCards(0, self.board.stock)
 
+
+class QuitException(Exception): pass
 
 game = Solitaire()
 game.play()
