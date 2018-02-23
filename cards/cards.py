@@ -40,7 +40,7 @@ class Deck:
     # distributes a certain number of cards to each player
     def distributeCardsToPlayers(self, howManyEach, players):
         for player in players:
-            for card in howManyEach:
+            for card in range(0, howManyEach):
                 player.receiveCard(self.listOfCards.pop())
 
     # distinction between players and piles:
