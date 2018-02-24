@@ -23,10 +23,13 @@ class CrazyEights:
 
     def run(self):
         winner = None
+        roundNumber = 1
         print(" -----------------------------------------------")
         print("|                CRAZY EIGHTS                   |")
         print(" -----------------------------------------------")
+        #print("==================== Round %s ====================" % str(roundNumber))
         while self.state == "running":
+            print("==================== Round %s ====================" % str(roundNumber))
             for player in self.players:
                 self.state = self.advance(player)
                 if (self.state == "gameover"):
@@ -35,8 +38,8 @@ class CrazyEights:
                     else:
                         winner = "Computer Player " + str(player.index)
                     break
-            print("=================================================")
-        print(winner, "won the game!")
+            roundNumber += 1
+        print(winner, "won the game in %s rounds!" % str(roundNumber-1))
 
     def advance(self, player):
         self.playPile.top().visible = True
@@ -74,7 +77,6 @@ class AIPlayer(Player):
     def makeMove(self, game):
         allMoves = getMoves(self, game)
         allMoves[0].make()
-        allMoves[0].card.visible = True
         print("\t", allMoves[0])
 
 class HumanPlayer(Player):
