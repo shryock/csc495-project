@@ -1,4 +1,5 @@
 import os
+import time
 from cards import *
 
 class CrazyEights:
@@ -13,33 +14,44 @@ class CrazyEights:
         for i in range(0, CrazyEights.NUMBER_AI_PLAYERS):
             self.players.append(AIPlayer(i))
 
+        self.suitChange = None
+
         deck = Deck()
         deck.shuffle()
         deck.distributeCardsToPlayers(5, self.players)
 
         self.drawPile = Pile(deck.listOfCards)
+        while (self.drawPile.top().rank == "8"):
+            print("There was an 8 at the top of the pile, so it was reshuffled.")
+            random.shuffle(self.drawPile.getContents())
+
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
 
     def run(self):
-        winner = None
-        roundNumber = 1
-        print(" -----------------------------------------------")
-        print("|                CRAZY EIGHTS                   |")
-        print(" -----------------------------------------------")
-        #print("==================== Round %s ====================" % str(roundNumber))
-        while self.state == "running":
-            print("==================== Round %s ====================" % str(roundNumber))
-            for player in self.players:
-                self.state = self.advance(player)
-                if (self.state == "gameover"):
-                    if isinstance(player, HumanPlayer):
-                        winner = "You"
-                    else:
-                        winner = "Computer Player " + str(player.index)
-                    break
-            roundNumber += 1
-        print(winner, "won the game in %s rounds!" % str(roundNumber-1))
+        try:
+            winner = None
+            roundNumber = 1
+            print("\n"*2)
+            print(" -----------------------------------------------")
+            print("|                CRAZY EIGHTS                   |")
+            print(" -----------------------------------------------")
+            while self.state == "running":
+                print("\n")
+                print("==================== Round %s ====================" % str(roundNumber))
+                print("\n")
+                for player in self.players:
+                    self.state = self.advance(player)
+                    if (self.state == "gameover"):
+                        if isinstance(player, HumanPlayer):
+                            winner = "You"
+                        else:
+                            winner = "Computer Player " + str(player.index)
+                        break
+                roundNumber += 1
+            print(winner, "won the game in %s rounds!" % str(roundNumber-1))
+        except KeyboardInterrupt:
+            print("\nGame Exited")
 
     def advance(self, player):
         self.playPile.top().visible = True
@@ -51,7 +63,7 @@ class CrazyEights:
         elif isinstance(player, AIPlayer):
             print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
         
-        player.makeMove(self)
+        self.suitChange = player.makeMove(self)
         
         if len(player.hand) == 0:
             return "gameover"
@@ -60,6 +72,8 @@ class CrazyEights:
             self.drawPile.makeAllCardsInvisible()
             random.shuffle(self.drawPile.getContents())
             self.drawPile.giveOneCard(self.playPile)
+
+        time.sleep(1)
 
         return "running"
 
@@ -76,8 +90,9 @@ class AIPlayer(Player):
 
     def makeMove(self, game):
         allMoves = getMoves(self, game)
-        allMoves[0].make()
+        allMoves[0].card.visible = True
         print("\t", allMoves[0])
+        return allMoves[0].make()
 
 class HumanPlayer(Player):
     def __init__(self):
@@ -94,8 +109,16 @@ class HumanPlayer(Player):
         for index, move in enumerate(allMoves):
             print("   %i. %s" % (index+1, str(move)))
         playerMove = input("Choose your next move: ")
-        # TODO add in type checking here since it is user input
-        allMoves[int(playerMove)-1].make()
+        while True:
+            try:
+                index = int(playerMove)
+                if index > len(allMoves) or index <= 0:
+                    raise ValueError
+                else:
+                    break
+            except ValueError:
+                playerMove = input("Choose your next move: ")
+        return allMoves[int(playerMove)-1].make()
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):
@@ -113,21 +136,43 @@ class Move:
 
     def make(self):
         self.fromPile.getContents().remove(self.card)
-        if isinstance(self.player, HumanPlayer):
+        if (isinstance(self.player, HumanPlayer)):
             self.card.visible = True
-        elif isinstance(self.player, AIPlayer):
+        if isinstance(self.player, AIPlayer) and self.type == "draw":
             self.card.visible = False
         self.toPile.receiveCard(self.card)
+
+        if self.card.rank == "8" and self.type == "play":
+            suitChoiceInput = None
+            if isinstance(self.player, HumanPlayer):
+                print("1. ", suitCharacters["Hearts"])
+                print("2. ", suitCharacters["Spades"])
+                print("3. ", suitCharacters["Clubs"])
+                print("4. ", suitCharacters["Diamonds"])
+                suitChoiceInput = input("Choose which suit to switch to: ")
+            elif isinstance(self.player, AIPlayer):
+                suitChoiceInput = random.choice(range(1, 5))
+            suitChoice = suits[int(suitChoiceInput)-1]
+            print("Suit has been changed to ", suitCharacters[suitChoice])
+
+            # I really don't like doing this, but I'm going to because it's a hacky, temporary fix.
+            return suitChoice
 
 def getMoves(player, game):
     moves = []
     playPile = game.playPile
     topCard = playPile.top()
     for card in player.hand:
-        canBePlayed = card.suit == topCard.suit or card.rank == topCard.rank or card.rank == 8
+        # If the last card played was an 8 and the suit was changed...
+        if game.suitChange is not None:
+            canBePlayed = (card.suit == game.suitChange) or (card.rank == "8")
+        # Normal game condition; no 8 was played
+        else: 
+            canBePlayed = (card.suit == topCard.suit) or (card.rank == topCard.rank) or (card.rank == "8")
         if canBePlayed:
             moves.append(Move(card, player.hand, game.playPile, player, "play"))
 
+    game.suitChange = None
     moves.append(Move(game.drawPile.top(), game.drawPile, player.hand, player, "draw"))
 
     return moves
