@@ -1,0 +1,4255 @@
+Script started on 2018-03-12 14:24:05-0400
+]0;jesse@whitebox:~/plm/csc495-project/cards/playthrough_transcripts> python ../Solitaire.py
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  3♠  [ ]  [ ]  [ ]  [ ]  [ ]  [ ]
+       2♦  [ ]  [ ]  [ ]  [ ]  [ ]
+            8♣  [ ]  [ ]  [ ]  [ ]
+                 K♦  [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                                4♣
+
+1. Move 2D from Stack1 to Stack0
+2. Move 8C from Stack2 to Stack5
+3. Draw from Stock
+4. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  3♠  [ ]  [ ]  [ ]  [ ]  [ ]  [ ]
+  2♦       [ ]  [ ]  [ ]  [ ]  [ ]
+            8♣  [ ]  [ ]  [ ]  [ ]
+                 K♦  [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                                4♣
+
+1. Move 8C from Stack2 to Stack5
+2. Show Stack1
+3. Draw from Stock
+4. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  3♠   4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+  2♦       [ ]  [ ]  [ ]  [ ]  [ ]
+            8♣  [ ]  [ ]  [ ]  [ ]
+                 K♦  [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                                4♣
+
+1. Move 3S from Stack0 to Stack1
+2. Move 8C from Stack2 to Stack5
+3. Draw from Stock
+4. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+       4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+       3♠  [ ]  [ ]  [ ]  [ ]  [ ]
+       2♦   8♣  [ ]  [ ]  [ ]  [ ]
+                 K♦  [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                                4♣
+
+1. Move 8C from Stack2 to Stack5
+2. Move KD from Stack3 to Stack0
+3. Draw from Stock
+4. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  K♦   4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+       3♠  [ ]  [ ]  [ ]  [ ]  [ ]
+       2♦   8♣  [ ]  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                                4♣
+
+1. Move 8C from Stack2 to Stack5
+2. Show Stack3
+3. Draw from Stock
+4. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  K♦   4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+       3♠  [ ]  [ ]  [ ]  [ ]  [ ]
+       2♦       [ ]  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack2
+2. Show Stack3
+3. Draw from Stock
+4. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  K♦   4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+       3♠   1♣  [ ]  [ ]  [ ]  [ ]
+       2♦       [ ]  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Move 1C from Stack2 to Stack1
+2. Move 1C from Stack2 to Clubs
+3. Show Stack3
+4. Draw from Stock
+5. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦   4♦  [ ]  [ ]  [ ]  [ ]  [ ]
+       3♠       [ ]  [ ]  [ ]  [ ]
+       2♦       [ ]  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack2
+2. Show Stack3
+3. Draw from Stock
+4. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦   4♦   8♥  [ ]  [ ]  [ ]  [ ]
+       3♠       [ ]  [ ]  [ ]  [ ]
+       2♦       [ ]  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack3
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦   4♦   8♥  [ ]  [ ]  [ ]  [ ]
+       3♠       [ ]  [ ]  [ ]  [ ]
+       2♦        J♠  [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Move JS from Stack3 to Stack4
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦   4♦   8♥  [ ]  [ ]  [ ]  [ ]
+       3♠       [ ]  [ ]  [ ]  [ ]
+       2♦            [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack3
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦   4♦   8♥  [ ]  [ ]  [ ]  [ ]
+       3♠        5♠  [ ]  [ ]  [ ]
+       2♦            [ ]  [ ]  [ ]
+                     [ ]  [ ]  [ ]
+                      Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move 4D from Stack1 to Stack3
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+  K♦        8♥  [ ]  [ ]  [ ]  [ ]
+                 5♠  [ ]  [ ]  [ ]
+                 4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦   Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move KD from Stack0 to Stack1
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       [ ]  [ ]
+
+       K♦   8♥  [ ]  [ ]  [ ]  [ ]
+                 5♠  [ ]  [ ]  [ ]
+                 4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦   Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move KD from Stack1 to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+       K♦   8♥  [ ]  [ ]  [ ]  [ ]
+                 5♠  [ ]  [ ]  [ ]
+                 4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦   Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move KD from Stack1 to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]   1♣  [ ]        K♠  [ ]
+
+       K♦   8♥  [ ]  [ ]  [ ]  [ ]
+                 5♠  [ ]  [ ]  [ ]
+                 4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦   Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move KD from Stack1 to Stack0
+2. Move KS from Waste to Stack0
+3. Draw from Stock
+4. Quit
+Choose your next move: 2
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+                 5♠  [ ]  [ ]  [ ]
+                 4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦   Q♦  [ ]  [ ]
+                      J♠   9♦  [ ]
+                           8♣   4♣
+
+1. Move QD from Stack4 to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 1 2 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦             5♠  [ ]  [ ]  [ ]
+  J♠             4♦  [ ]  [ ]  [ ]
+                 3♠  [ ]  [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack4
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦             5♠  [ ]  [ ]  [ ]
+  J♠             4♦  [ ]  [ ]  [ ]
+                 3♠  10♦  [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Move 10D from Stack4 to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦             5♠  [ ]  [ ]  [ ]
+  J♠             4♦  [ ]  [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack4
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦             5♠  [ ]  [ ]  [ ]
+  J♠             4♦   7♠  [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Move 7S from Stack4 to Stack2
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠  [ ]  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Show Stack4
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        Q♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        5♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        5♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        3♦  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+
+1. Move 3D from Waste to Stack6
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        5♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       10♠  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]       10♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        J♦  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        6♠  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        K♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        Q♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦        7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Move QC from Waste to Stack1
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        K♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        9♥  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        K♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        7♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Draw from Stock
+2. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        9♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+                 2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Move 9C from Waste to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        7♣  [ ]
+
+  K♠   K♦   8♥  [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣   7♠   5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+  9♣             2♦       [ ]  [ ]
+                           9♦  [ ]
+                           8♣   4♣
+                                3♦
+
+1. Move 8H from Stack2 to Stack0
+2. Draw from Stock
+3. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   1♣  [ ]        7♣  [ ]
+
+  K♠   K♦       [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣        5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+  9♣             2♦       [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+                                3♦
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Draw from Stock
+4. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   1♣  [ ]        9♠  [ ]
+
+  K♠   K♦       [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣        5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+  9♣             2♦       [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+                                3♦
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Draw from Stock
+4. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   1♣  [ ]        6♦  [ ]
+
+  K♠   K♦       [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣        5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+  9♣             2♦       [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+                                3♦
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move 6D from Waste to Stack0
+4. Draw from Stock
+5. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   1♣  [ ]        9♠  [ ]
+
+  K♠   K♦       [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣        5♠   8♠  [ ]  [ ]
+  J♠             4♦       [ ]  [ ]
+ 10♦             3♠       [ ]  [ ]
+  9♣             2♦       [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move 5S from Stack3 to Stack0
+4. Draw from Stock
+5. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   1♣  [ ]        9♠  [ ]
+
+  K♠   K♦       [ ]  [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Show Stack3
+4. Draw from Stock
+5. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   1♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Draw from Stock
+5. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   1♣  [ ]        2♣  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Move 2C from Waste to Stack6
+5. Move 2C from Waste to Clubs
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Draw from Stock
+5. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]       10♣  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Move 10C from Waste to Stack3
+5. Draw from Stock
+6. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣       10♣   8♠  [ ]  [ ]
+  J♠                      [ ]  [ ]
+ 10♦                      [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                       9♦  [ ]
+  7♠                       8♣   4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Move 9D from Stack5 to Stack3
+5. Draw from Stock
+6. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣       10♣   8♠  [ ]  [ ]
+  J♠             9♦       [ ]  [ ]
+ 10♦             8♣       [ ]  [ ]
+  9♣                      [ ]  [ ]
+  8♥                           [ ]
+  7♠                            4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Show Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣       10♣   8♠  [ ]  [ ]
+  J♠             9♦       [ ]  [ ]
+ 10♦             8♣       [ ]  [ ]
+  9♣                       5♦  [ ]
+  8♥                           [ ]
+  7♠                            4♣
+  6♦                            3♦
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Move 4C from Stack6 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣       10♣   8♠  [ ]  [ ]
+  J♠             9♦       [ ]  [ ]
+ 10♦             8♣       [ ]  [ ]
+  9♣                       5♦  [ ]
+  8♥                       4♣  [ ]
+  7♠                       3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Show Stack6
+5. Draw from Stock
+6. Quit
+Choose your next move: 4
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦        J♥  [ ]  [ ]  [ ]
+  Q♦   Q♣       10♣   8♠  [ ]  [ ]
+  J♠             9♦       [ ]  [ ]
+ 10♦             8♣       [ ]  [ ]
+  9♣                       5♦  [ ]
+  8♥                       4♣   Q♠
+  7♠                       3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KD from Stack1 to Stack2
+3. Move JH from Stack3 to Stack1
+4. Move JH from Stack3 to Stack6
+5. Draw from Stock
+6. Quit
+Choose your next move: 3
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠                       3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Draw from Stock
+7. Quit
+Choose your next move: 6
+
+
+ [ ]  [ ]   2♣  [ ]        6♣  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠                       3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Draw from Stock
+7. Quit
+Choose your next move: 6
+
+
+ [ ]  [ ]   2♣  [ ]        7♦  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠                       3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 7D from Waste to Stack1
+7. Move 7D from Waste to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 6
+
+
+ [ ]  [ ]   2♣  [ ]        6♣  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠   7♦                  3♦     
+  6♦                              
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 7D from Stack1 to Stack4
+7. Move 6C from Waste to Stack1
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠   7♦                  3♦     
+  6♦   6♣                         
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 7D from Stack1 to Stack4
+7. Move 5D from Stack5 to Stack1
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        7♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥                 [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠   7♦                  3♦     
+  6♦   6♣                         
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 7D from Stack1 to Stack4
+7. Move 5D from Stack5 to Stack1
+8. Move 7H from Waste to Stack4
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                  5♦  [ ]
+  8♥   8♣                  4♣   Q♠
+  7♠   7♦                  3♦     
+  6♦   6♣                         
+  5♠                              
+  4♦                              
+  3♠                              
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 6C from Stack1 to Stack4
+7. Move 5D from Stack5 to Stack1
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                 [ ]  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move KD from Stack1 to Stack2
+4. Move KD from Stack1 to Stack3
+5. Move JH from Stack1 to Stack6
+6. Move 6C from Stack1 to Stack4
+7. Show Stack5
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+ [ ]  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        4♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Reshuffle Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        J♣  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        Q♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        5♣  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                      [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 5S from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Move 5C from Waste to Stack5
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        Q♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 9 8
+
+
+ [ ]  [ ]   2♣  [ ]        5♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        J♦  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move JH from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Move JD from Waste to Stack6
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                       J♦
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move 10C from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]        6♠  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣                  6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                       J♦
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move 10C from Stack1 to Stack6
+7. Move 6C from Stack1 to Stack4
+8. Move 6S from Waste to Stack4
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣             6♠   6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                       J♦
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move 10C from Stack1 to Stack6
+7. Move 5D from Stack1 to Stack4
+8. Draw from Stock
+9. Quit
+Choose your next move: 6 8
+
+
+ [ ]  [ ]   2♣  [ ]        K♥  [ ]
+
+  K♠   K♦            [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣             6♠   6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                       J♦
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack2
+2. Move KS from Stack0 to Stack3
+3. Move 4D from Stack0 to Stack5
+4. Move KD from Stack1 to Stack2
+5. Move KD from Stack1 to Stack3
+6. Move 10C from Stack1 to Stack6
+7. Move 5D from Stack1 to Stack4
+8. Move KH from Waste to Stack2
+9. Move KH from Waste to Stack3
+10. Draw from Stock
+11. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦   K♥       [ ]  [ ]  [ ]
+  Q♦   Q♣             8♠  [ ]  [ ]
+  J♠   J♥             7♥  [ ]  [ ]
+ 10♦  10♣             6♠   6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                       Q♠
+  7♠   7♦                       J♦
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack3
+2. Move 4D from Stack0 to Stack5
+3. Move KD from Stack1 to Stack3
+4. Move QC from Stack1 to Stack2
+5. Move 10C from Stack1 to Stack6
+6. Move 5D from Stack1 to Stack4
+7. Move KH from Stack2 to Stack3
+8. Move QS from Stack6 to Stack2
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦   K♥       [ ]  [ ]  [ ]
+  Q♦   Q♣   Q♠        8♠  [ ]  [ ]
+  J♠   J♥   J♦        7♥  [ ]  [ ]
+ 10♦  10♣             6♠   6♥  [ ]
+  9♣   9♦                  5♣  [ ]
+  8♥   8♣                         
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack3
+2. Move 4D from Stack0 to Stack5
+3. Move KD from Stack1 to Stack3
+4. Move 10C from Stack1 to Stack2
+5. Move 5D from Stack1 to Stack4
+6. Move KH from Stack2 to Stack3
+7. Show Stack6
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♠   K♦   K♥       [ ]  [ ]  [ ]
+  Q♦   Q♣   Q♠        8♠  [ ]  [ ]
+  J♠   J♥   J♦        7♥  [ ]  [ ]
+ 10♦  10♣             6♠   6♥  [ ]
+  9♣   9♦                  5♣   1♥
+  8♥   8♣                         
+  7♠   7♦                         
+  6♦   6♣                         
+  5♠   5♦                         
+  4♦   4♣                         
+  3♠   3♦                         
+  2♦                              
+
+1. Move KS from Stack0 to Stack3
+2. Move 4D from Stack0 to Stack5
+3. Move KD from Stack1 to Stack3
+4. Move 10C from Stack1 to Stack2
+5. Move 5D from Stack1 to Stack4
+6. Move KH from Stack2 to Stack3
+7. Move 1H from Stack6 to Hearts
+8. Draw from Stock
+9. Quit
+Choose your next move: 1
+
+
+ [ ]  [ ]   2♣  [ ]       10♥  [ ]
+
+       K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥  [ ]
+       9♦        9♣        5♣   1♥
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KD from Stack1 to Stack0
+2. Move 10C from Stack1 to Stack2
+3. Move 5D from Stack1 to Stack4
+4. Move KH from Stack2 to Stack0
+5. Move KS from Stack3 to Stack0
+6. Move 4D from Stack3 to Stack5
+7. Move 1H from Stack6 to Hearts
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]       10♥  [ ]
+
+       K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥  [ ]
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KD from Stack1 to Stack0
+2. Move 10C from Stack1 to Stack2
+3. Move 5D from Stack1 to Stack4
+4. Move KH from Stack2 to Stack0
+5. Move KS from Stack3 to Stack0
+6. Move 4D from Stack3 to Stack5
+7. Show Stack6
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]       10♥  [ ]
+
+       K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KD from Stack1 to Stack0
+2. Move 10C from Stack1 to Stack2
+3. Move 5D from Stack1 to Stack4
+4. Move KH from Stack2 to Stack0
+5. Move KS from Stack3 to Stack0
+6. Move 4D from Stack3 to Stack5
+7. Draw from Stock
+8. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]        9♥  [ ]
+
+       K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KD from Stack1 to Stack0
+2. Move 10C from Stack1 to Stack2
+3. Move 5D from Stack1 to Stack4
+4. Move KH from Stack2 to Stack0
+5. Move KS from Stack3 to Stack0
+6. Move 4D from Stack3 to Stack5
+7. Draw from Stock
+8. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]        K♣  [ ]
+
+       K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KD from Stack1 to Stack0
+2. Move 10C from Stack1 to Stack2
+3. Move 5D from Stack1 to Stack4
+4. Move KH from Stack2 to Stack0
+5. Move KS from Stack3 to Stack0
+6. Move 4D from Stack3 to Stack5
+7. Move KC from Waste to Stack0
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]        9♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 4D from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        7♣  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 4D from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 4D from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        4♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥               
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 4D from Stack3 to Stack5
+5. Move 4H from Waste to Stack5
+6. Reshuffle Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Reshuffle Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        J♣  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        Q♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+       Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move QD from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move QH from Waste to Stack0
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        J♣  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+       J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move JS from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move JC from Waste to Stack0
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        5♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣        5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 5D from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 5H from Waste to Stack4
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       10♠  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣       10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 10C from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 10S from Waste to Stack2
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣  10♠  10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 9D from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       10♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+      10♣  10♠  10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 9D from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 10D from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 10H from Waste to Stack0
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+ 10♥  10♣  10♠  10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 9D from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 9C from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Draw from Stock
+6. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]        9♥  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+ 10♥  10♣  10♠  10♦   6♠   6♥   3♥
+       9♦        9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 9D from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 9C from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 9H from Waste to Stack2
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦   8♠  [ ]  [ ]
+  J♣   J♥   J♦   J♠   7♥  [ ]  [ ]
+ 10♥  10♣  10♠  10♦   6♠   6♥   3♥
+       9♦   9♥   9♣   5♥   5♣     
+       8♣        8♥        4♥     
+       7♦        7♠               
+       6♣        6♦               
+       5♦        5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 8C from Stack1 to Stack2
+2. Move 4C from Stack1 to Stack4
+3. Move 9C from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 8S from Stack4 to Stack2
+6. Draw from Stock
+7. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠  [ ]  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]  [ ]
+ 10♥  10♣  10♠  10♦        6♥   3♥
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 4C from Stack1 to Stack2
+2. Move 9C from Stack3 to Stack0
+3. Move 3S from Stack3 to Stack5
+4. Show Stack4
+5. Draw from Stock
+6. Quit
+Choose your next move: 5 4
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠   4♠  [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]  [ ]
+ 10♥  10♣  10♠  10♦        6♥   3♥
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣        4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move 4C from Stack1 to Stack2
+2. Move 3D from Stack1 to Stack4
+3. Move 9C from Stack3 to Stack0
+4. Move 3S from Stack3 to Stack5
+5. Move 4S from Stack4 to Stack2
+6. Move 3H from Stack6 to Stack4
+7. Draw from Stock
+8. Quit
+Choose your next move: 5
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]  [ ]
+ 10♥  10♣  10♠  10♦        6♥   3♥
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦        3♠               
+                 2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move 3D from Stack1 to Stack2
+4. Move KH from Stack2 to Stack4
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 3S from Stack3 to Stack5
+8. Move 3H from Stack6 to Stack2
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]  [ ]
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+                 2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move KS from Stack3 to Stack4
+5. Move 9C from Stack3 to Stack0
+6. Move 3S from Stack3 to Stack5
+7. Show Stack6
+8. Draw from Stock
+9. Quit
+Choose your next move: 7
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]   2♠
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+                 2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move KS from Stack3 to Stack4
+5. Move 9C from Stack3 to Stack0
+6. Move 3S from Stack3 to Stack5
+7. Move 2S from Stack6 to Stack1
+8. Move 2S from Stack6 to Stack2
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]  [ ]
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 3S from Stack3 to Stack5
+8. Show Stack6
+9. Draw from Stock
+10. Quit
+Choose your next move: 8
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 7S from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Draw from Stock
+10. Quit
+Choose your next move: 9
+
+
+  1♥  [ ]   2♣  [ ]        7♣  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 7S from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 7C from Waste to Stack6
+10. Draw from Stock
+11. Quit
+Choose your next move: 9
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]   7♣
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 6D from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 6H from Stack5 to Stack6
+10. Draw from Stock
+11. Quit
+Choose your next move: 10
+
+
+  1♥  [ ]   2♣  [ ]        9♠  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]   7♣
+ 10♥  10♣  10♠  10♦        6♥     
+       9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 9C from Stack3 to Stack0
+7. Move 6D from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 6H from Stack5 to Stack6
+10. Move 9S from Waste to Stack0
+11. Reshuffle Stock
+12. Quit
+Choose your next move: 10
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]   7♣
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 8H from Stack3 to Stack0
+7. Move 6D from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 6H from Stack5 to Stack6
+10. Move 8D from Stack6 to Stack0
+11. Reshuffle Stock
+12. Quit
+Choose your next move: 11
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]   7♣
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 8H from Stack3 to Stack0
+7. Move 6D from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 6H from Stack5 to Stack6
+10. Move 8D from Stack6 to Stack0
+11. Reshuffle Stock
+12. Quit
+Choose your next move: 11
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]   8♦
+  J♣   J♥   J♦   J♠       [ ]   7♣
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+       8♣   8♠   8♥        4♥     
+       7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 8H from Stack3 to Stack0
+7. Move 6D from Stack3 to Stack6
+8. Move 3S from Stack3 to Stack5
+9. Move 6H from Stack5 to Stack6
+10. Move 8D from Stack6 to Stack0
+11. Reshuffle Stock
+12. Quit
+Choose your next move: 10
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]  [ ]
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+  8♦   8♣   8♠   8♥        4♥     
+  7♣   7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 6D from Stack3 to Stack0
+7. Move 3S from Stack3 to Stack5
+8. Move 6H from Stack5 to Stack0
+9. Show Stack6
+10. Reshuffle Stock
+11. Quit
+Choose your next move: 9
+
+
+  1♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]   2♥
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+  8♦   8♣   8♠   8♥        4♥     
+  7♣   7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KD from Stack1 to Stack4
+3. Move KH from Stack2 to Stack4
+4. Move 2S from Stack2 to Stack1
+5. Move KS from Stack3 to Stack4
+6. Move 6D from Stack3 to Stack0
+7. Move 3S from Stack3 to Stack5
+8. Move 6H from Stack5 to Stack0
+9. Move 2H from Stack6 to Hearts
+10. Reshuffle Stock
+11. Quit
+Choose your next move: 9
+
+
+  2♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦        6♥     
+  9♠   9♦   9♥   9♣        5♣     
+  8♦   8♣   8♠   8♥        4♥     
+  7♣   7♦   7♥   7♠               
+       6♣   6♠   6♦               
+       5♦   5♥   5♠               
+       4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move KS from Stack3 to Stack4
+9. Move KS from Stack3 to Stack6
+10. Move 6D from Stack3 to Stack0
+11. Move 3S from Stack3 to Stack5
+12. Move 6H from Stack5 to Stack0
+13. Reshuffle Stock
+14. Quit
+Choose your next move: 12
+
+
+  2♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠       [ ]     
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move KS from Stack3 to Stack4
+9. Move KS from Stack3 to Stack6
+10. Move 3S from Stack3 to Stack0
+11. Show Stack5
+12. Reshuffle Stock
+13. Quit
+Choose your next move: 11
+
+
+  2♥  [ ]   2♣  [ ]       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠        1♦     
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move KS from Stack3 to Stack4
+9. Move KS from Stack3 to Stack6
+10. Move 3S from Stack3 to Stack0
+11. Move 1D from Stack5 to Stack2
+12. Move 1D from Stack5 to Diamonds
+13. Reshuffle Stock
+14. Quit
+Choose your next move: 12
+
+
+  2♥  [ ]   2♣   1♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦       [ ]     
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move KS from Stack3 to Stack4
+9. Move KS from Stack3 to Stack6
+10. Move 3S from Stack3 to Stack0
+11. Move 2D from Stack3 to Diamonds
+12. Show Stack5
+13. Reshuffle Stock
+14. Quit
+Choose your next move: 12
+
+
+  2♥  [ ]   2♣   1♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦        1♠     
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move KS from Stack3 to Stack4
+9. Move KS from Stack3 to Stack6
+10. Move 3S from Stack3 to Stack0
+11. Move 2D from Stack3 to Diamonds
+12. Move 1S from Stack5 to Stack3
+13. Move 1S from Stack5 to Spades
+14. Reshuffle Stock
+15. Quit
+Choose your next move: 12 3
+
+
+  2♥   1♠   2♣   1♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠       [ ]     
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move 2S from Stack2 to Spades
+9. Move KS from Stack3 to Stack4
+10. Move KS from Stack3 to Stack6
+11. Move 3S from Stack3 to Stack0
+12. Move 2D from Stack3 to Diamonds
+13. Show Stack5
+14. Reshuffle Stock
+15. Quit
+Choose your next move: 13
+
+
+  2♥   1♠   2♣   1♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠        3♣     
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack6
+3. Move KD from Stack1 to Stack4
+4. Move KD from Stack1 to Stack6
+5. Move KH from Stack2 to Stack4
+6. Move KH from Stack2 to Stack6
+7. Move 2S from Stack2 to Stack1
+8. Move 2S from Stack2 to Spades
+9. Move KS from Stack3 to Stack4
+10. Move KS from Stack3 to Stack6
+11. Move 3S from Stack3 to Stack0
+12. Move 2D from Stack3 to Stack5
+13. Move 2D from Stack3 to Diamonds
+14. Move 3C from Stack5 to Stack0
+15. Move 3C from Stack5 to Clubs
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 15
+
+
+  2♥   1♠   3♣   1♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠   2♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 2S from Stack2 to Stack1
+11. Move 2S from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 3S from Stack3 to Stack0
+16. Move 2D from Stack3 to Diamonds
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  2♥   1♠   3♣   2♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+       3♦   3♥   3♠               
+            2♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move 3D from Stack1 to Diamonds
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 2S from Stack2 to Stack1
+12. Move 2S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 3S from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 7
+
+
+  2♥   1♠   3♣   3♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥   4♣   4♠   4♦               
+            3♥   3♠               
+            2♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move 4C from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 3H from Stack2 to Stack1
+12. Move 2S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 3S from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 7
+
+
+  2♥   1♠   4♣   3♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥        4♠   4♦               
+            3♥   3♠               
+            2♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 4S from Stack2 to Stack1
+11. Move 2S from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 3S from Stack3 to Stack0
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 11
+
+
+  2♥   2♠   4♣   3♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥        4♠   4♦               
+            3♥   3♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 4S from Stack2 to Stack1
+11. Move 3H from Stack2 to Hearts
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 3S from Stack3 to Stack0
+16. Move 3S from Stack3 to Spades
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 11
+
+
+  3♥   2♠   4♣   3♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥        4♠   4♦               
+                 3♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 4H from Stack0 to Hearts
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 4S from Stack2 to Stack1
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 3S from Stack3 to Stack0
+16. Move 3S from Stack3 to Spades
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  3♥   3♠   4♣   3♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥        4♠   4♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 4H from Stack0 to Hearts
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 4S from Stack2 to Stack1
+12. Move 4S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 4D from Stack3 to Diamonds
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  3♥   3♠   4♣   4♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣   5♦   5♥   5♠               
+  4♥        4♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 4H from Stack0 to Stack3
+5. Move 4H from Stack0 to Hearts
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move 5D from Stack1 to Diamonds
+10. Move KH from Stack2 to Stack4
+11. Move KH from Stack2 to Stack5
+12. Move KH from Stack2 to Stack6
+13. Move 4S from Stack2 to Stack1
+14. Move 4S from Stack2 to Spades
+15. Move KS from Stack3 to Stack4
+16. Move KS from Stack3 to Stack5
+17. Move KS from Stack3 to Stack6
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 9
+
+
+  3♥   3♠   4♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣        5♥   5♠               
+  4♥        4♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 4H from Stack0 to Stack3
+5. Move 4H from Stack0 to Hearts
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 5H from Stack2 to Stack1
+13. Move 4S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 5
+
+
+  4♥   3♠   4♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+  5♣        5♥   5♠               
+            4♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 5C from Stack0 to Clubs
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 5H from Stack2 to Stack1
+12. Move 4S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 4
+
+
+  4♥   3♠   5♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥   6♣   6♠   6♦               
+            5♥   5♠               
+            4♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move 6C from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 5H from Stack2 to Stack1
+12. Move 4S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 5S from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 7
+
+
+  4♥   3♠   6♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥        6♠   6♦               
+            5♥   5♠               
+            4♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 6S from Stack2 to Stack1
+11. Move 4S from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 5S from Stack3 to Stack0
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 11
+
+
+  4♥   4♠   6♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥        6♠   6♦               
+            5♥   5♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 6S from Stack2 to Stack1
+11. Move 5H from Stack2 to Hearts
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 5S from Stack3 to Stack0
+16. Move 5S from Stack3 to Spades
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 11
+
+
+  5♥   4♠   6♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥        6♠   6♦               
+                 5♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 6H from Stack0 to Hearts
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 6S from Stack2 to Stack1
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 5S from Stack3 to Stack0
+16. Move 5S from Stack3 to Spades
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  5♥   5♠   6♣   5♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥        6♠   6♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 6H from Stack0 to Hearts
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 6S from Stack2 to Stack1
+12. Move 6S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 6D from Stack3 to Diamonds
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  5♥   5♠   6♣   6♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣   7♦   7♥   7♠               
+  6♥        6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 6H from Stack0 to Stack3
+5. Move 6H from Stack0 to Hearts
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move 7D from Stack1 to Diamonds
+10. Move KH from Stack2 to Stack4
+11. Move KH from Stack2 to Stack5
+12. Move KH from Stack2 to Stack6
+13. Move 6S from Stack2 to Stack1
+14. Move 6S from Stack2 to Spades
+15. Move KS from Stack3 to Stack4
+16. Move KS from Stack3 to Stack5
+17. Move KS from Stack3 to Stack6
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 9
+
+
+  5♥   5♠   6♣   7♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣        7♥   7♠               
+  6♥        6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 6H from Stack0 to Stack3
+5. Move 6H from Stack0 to Hearts
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 7H from Stack2 to Stack1
+13. Move 6S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 5
+
+
+  6♥   5♠   6♣   7♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+  7♣        7♥   7♠               
+            6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 7C from Stack0 to Clubs
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 7H from Stack2 to Stack1
+12. Move 6S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 4
+
+
+  6♥   5♠   7♣   7♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦   8♣   8♠   8♥               
+            7♥   7♠               
+            6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 8D from Stack0 to Diamonds
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move 8C from Stack1 to Clubs
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 7H from Stack2 to Stack1
+13. Move 6S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Move 7S from Stack3 to Stack0
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 8
+
+
+  6♥   5♠   8♣   7♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+  8♦        8♠   8♥               
+            7♥   7♠               
+            6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 8D from Stack0 to Diamonds
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 8S from Stack2 to Stack1
+12. Move 6S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 7S from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 4
+
+
+  6♥   5♠   8♣   8♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠   9♦   9♥   9♣               
+            8♠   8♥               
+            7♥   7♠               
+            6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move 9D from Stack1 to Diamonds
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 8S from Stack2 to Stack1
+12. Move 6S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 8H from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 7
+
+
+  6♥   5♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+            8♠   8♥               
+            7♥   7♠               
+            6♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 9H from Stack2 to Stack1
+11. Move 6S from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 8H from Stack3 to Stack0
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 11
+
+
+  6♥   6♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+            8♠   8♥               
+            7♥   7♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 9H from Stack2 to Stack1
+11. Move 7H from Stack2 to Hearts
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 8H from Stack3 to Stack0
+16. Move 7S from Stack3 to Spades
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  6♥   7♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+            8♠   8♥               
+            7♥                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 9H from Stack2 to Stack1
+11. Move 7H from Stack2 to Hearts
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 8H from Stack3 to Stack0
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 11
+
+
+  7♥   7♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+            8♠   8♥               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move 9H from Stack2 to Stack1
+11. Move 8S from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 8H from Stack3 to Stack0
+16. Move 8H from Stack3 to Hearts
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 11
+
+
+  7♥   8♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+                 8♥               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 9S from Stack0 to Spades
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 9H from Stack2 to Stack1
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move 8H from Stack3 to Stack0
+16. Move 8H from Stack3 to Hearts
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  8♥   8♠   8♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥   9♣               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 9S from Stack0 to Spades
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move 9H from Stack2 to Stack1
+12. Move 9H from Stack2 to Hearts
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move 9C from Stack3 to Clubs
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  8♥   8♠   9♣   9♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠  10♦               
+  9♠        9♥                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 9S from Stack0 to Stack3
+5. Move 9S from Stack0 to Spades
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move 10C from Stack1 to Clubs
+10. Move KH from Stack2 to Stack4
+11. Move KH from Stack2 to Stack5
+12. Move KH from Stack2 to Stack6
+13. Move 9H from Stack2 to Stack1
+14. Move 9H from Stack2 to Hearts
+15. Move KS from Stack3 to Stack4
+16. Move KS from Stack3 to Stack5
+17. Move KS from Stack3 to Stack6
+18. Move 10D from Stack3 to Diamonds
+19. Reshuffle Stock
+20. Quit
+Choose your next move: 18
+
+
+  8♥   8♠   9♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠                    
+  9♠        9♥                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 10H from Stack0 to Stack3
+5. Move 9S from Stack0 to Spades
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move 10C from Stack1 to Clubs
+10. Move KH from Stack2 to Stack4
+11. Move KH from Stack2 to Stack5
+12. Move KH from Stack2 to Stack6
+13. Move 9H from Stack2 to Stack1
+14. Move 9H from Stack2 to Hearts
+15. Move KS from Stack3 to Stack4
+16. Move KS from Stack3 to Stack5
+17. Move KS from Stack3 to Stack6
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 14
+
+
+  9♥   8♠   9♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥  10♣  10♠                    
+  9♠                              
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 10H from Stack0 to Stack3
+5. Move 9S from Stack0 to Spades
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move 10C from Stack1 to Clubs
+10. Move KH from Stack2 to Stack4
+11. Move KH from Stack2 to Stack5
+12. Move KH from Stack2 to Stack6
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 9
+
+
+  9♥   8♠  10♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥       10♠                    
+  9♠                              
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 10H from Stack0 to Stack3
+5. Move 9S from Stack0 to Spades
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 10S from Stack2 to Stack1
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 5
+
+
+  9♥   9♠  10♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+ 10♥       10♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move 10H from Stack0 to Stack3
+5. Move 10H from Stack0 to Hearts
+6. Move KD from Stack1 to Stack4
+7. Move KD from Stack1 to Stack5
+8. Move KD from Stack1 to Stack6
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 10S from Stack2 to Stack1
+13. Move 10S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 5
+
+
+ 10♥   9♠  10♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣   J♥   J♦   J♠               
+           10♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move JC from Stack0 to Clubs
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move JH from Stack1 to Hearts
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move 10S from Stack2 to Stack1
+13. Move 10S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 8
+
+
+  J♥   9♠  10♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+  J♣        J♦   J♠               
+           10♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move JC from Stack0 to Clubs
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move JD from Stack2 to Stack1
+12. Move 10S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Reshuffle Stock
+17. Quit
+Choose your next move: 4
+
+
+  J♥   9♠   J♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+  Q♥   Q♣   Q♠   Q♦               
+            J♦   J♠               
+           10♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move QH from Stack0 to Hearts
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move QC from Stack1 to Clubs
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move JD from Stack2 to Stack1
+13. Move 10S from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Move JS from Stack3 to Stack0
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 4
+
+
+  Q♥   9♠   J♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+       Q♣   Q♠   Q♦               
+            J♦   J♠               
+           10♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move QC from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move JD from Stack2 to Stack1
+12. Move 10S from Stack2 to Spades
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move QD from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 12
+
+
+  Q♥  10♠   J♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+       Q♣   Q♠   Q♦               
+            J♦   J♠               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move QC from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move JD from Stack2 to Stack1
+12. Move JD from Stack2 to Diamonds
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move QD from Stack3 to Stack0
+17. Move JS from Stack3 to Spades
+18. Reshuffle Stock
+19. Quit
+Choose your next move: 17
+
+
+  Q♥   J♠   J♣  10♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+       Q♣   Q♠   Q♦               
+            J♦                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move QC from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move JD from Stack2 to Stack1
+12. Move JD from Stack2 to Diamonds
+13. Move KS from Stack3 to Stack4
+14. Move KS from Stack3 to Stack5
+15. Move KS from Stack3 to Stack6
+16. Move QD from Stack3 to Stack0
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 12
+
+
+  Q♥   J♠   J♣   J♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+       Q♣   Q♠   Q♦               
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move QC from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move QS from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Move QD from Stack3 to Stack0
+16. Move QD from Stack3 to Diamonds
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 16
+
+
+  Q♥   J♠   J♣   Q♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+       Q♣   Q♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KD from Stack1 to Stack4
+5. Move KD from Stack1 to Stack5
+6. Move KD from Stack1 to Stack6
+7. Move QC from Stack1 to Clubs
+8. Move KH from Stack2 to Stack4
+9. Move KH from Stack2 to Stack5
+10. Move KH from Stack2 to Stack6
+11. Move QS from Stack2 to Spades
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Reshuffle Stock
+16. Quit
+Choose your next move: 7
+
+
+  Q♥   J♠   Q♣   Q♦       [ ]  [ ]
+
+  K♣   K♦   K♥   K♠               
+            Q♠                    
+
+1. Move KC from Stack0 to Stack4
+2. Move KC from Stack0 to Stack5
+3. Move KC from Stack0 to Stack6
+4. Move KC from Stack0 to Clubs
+5. Move KD from Stack1 to Stack4
+6. Move KD from Stack1 to Stack5
+7. Move KD from Stack1 to Stack6
+8. Move KD from Stack1 to Diamonds
+9. Move KH from Stack2 to Stack4
+10. Move KH from Stack2 to Stack5
+11. Move KH from Stack2 to Stack6
+12. Move QS from Stack2 to Stack1
+13. Move QS from Stack2 to Spades
+14. Move KS from Stack3 to Stack4
+15. Move KS from Stack3 to Stack5
+16. Move KS from Stack3 to Stack6
+17. Reshuffle Stock
+18. Quit
+Choose your next move: 8
+
+
+  Q♥   J♠   Q♣   K♦       [ ]  [ ]
+
+  K♣        K♥   K♠               
+            Q♠                    
+
+1. Move KC from Stack0 to Stack1
+2. Move KC from Stack0 to Stack4
+3. Move KC from Stack0 to Stack5
+4. Move KC from Stack0 to Stack6
+5. Move KC from Stack0 to Clubs
+6. Move KH from Stack2 to Stack1
+7. Move KH from Stack2 to Stack4
+8. Move KH from Stack2 to Stack5
+9. Move KH from Stack2 to Stack6
+10. Move QS from Stack2 to Spades
+11. Move KS from Stack3 to Stack1
+12. Move KS from Stack3 to Stack4
+13. Move KS from Stack3 to Stack5
+14. Move KS from Stack3 to Stack6
+15. Reshuffle Stock
+16. Quit
+Choose your next move: 5
+
+
+  Q♥   J♠   K♣   K♦       [ ]  [ ]
+
+            K♥   K♠               
+            Q♠                    
+
+1. Move KH from Stack2 to Stack0
+2. Move KH from Stack2 to Stack1
+3. Move KH from Stack2 to Stack4
+4. Move KH from Stack2 to Stack5
+5. Move KH from Stack2 to Stack6
+6. Move QS from Stack2 to Spades
+7. Move KS from Stack3 to Stack0
+8. Move KS from Stack3 to Stack1
+9. Move KS from Stack3 to Stack4
+10. Move KS from Stack3 to Stack5
+11. Move KS from Stack3 to Stack6
+12. Reshuffle Stock
+13. Quit
+Choose your next move: 6
+
+
+  Q♥   Q♠   K♣   K♦       [ ]  [ ]
+
+            K♥   K♠               
+
+1. Move KH from Stack2 to Stack0
+2. Move KH from Stack2 to Stack1
+3. Move KH from Stack2 to Stack4
+4. Move KH from Stack2 to Stack5
+5. Move KH from Stack2 to Stack6
+6. Move KH from Stack2 to Hearts
+7. Move KS from Stack3 to Stack0
+8. Move KS from Stack3 to Stack1
+9. Move KS from Stack3 to Stack4
+10. Move KS from Stack3 to Stack5
+11. Move KS from Stack3 to Stack6
+12. Move KS from Stack3 to Spades
+13. Reshuffle Stock
+14. Quit
+Choose your next move: 6
+
+
+  K♥   Q♠   K♣   K♦       [ ]  [ ]
+
+                 K♠               
+
+1. Move KS from Stack3 to Stack0
+2. Move KS from Stack3 to Stack1
+3. Move KS from Stack3 to Stack2
+4. Move KS from Stack3 to Stack4
+5. Move KS from Stack3 to Stack5
+6. Move KS from Stack3 to Stack6
+7. Move KS from Stack3 to Spades
+8. Reshuffle Stock
+9. Quit
+Choose your next move: 7
+
+
+Game Over
+
+Script done on 2018-03-12 14:38:13-0400
