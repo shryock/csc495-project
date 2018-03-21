@@ -103,4 +103,6 @@ def __main__():
     game = Solitaire()
     game.play()
 
-__main__()
+if __name__ == "__main__":
+    __main__()
+

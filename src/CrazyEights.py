@@ -177,5 +177,9 @@ def getMoves(player, game):
 
     return moves
 
-game = CrazyEights()
-game.run()
+def __main__():
+    game = CrazyEights()
+    game.run()
+
+if __name__ == '__main__':
+    __main__()
