@@ -1,5 +1,5 @@
-import cards
 import sys
+from .model.cards import *
 
 class CrazyEightBoard:
     board = None

@@ -1,6 +1,6 @@
 import os
 import time
-from cards import *
+from model.cards import *
 
 class CrazyEights:
 

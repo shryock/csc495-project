@@ -1,5 +1,4 @@
-from cards import *
-
+from .cards import *
 
 class SolitaireRulebook(RuleBook):
     def getAllPossibleMoves(self, board):

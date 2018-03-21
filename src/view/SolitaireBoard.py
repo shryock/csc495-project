@@ -1,5 +1,4 @@
-from cards import *
-
+from model.cards import *
 
 class SolitaireBoard(Board):
     def __init__(self, piles):

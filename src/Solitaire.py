@@ -1,6 +1,7 @@
-from cards import *
-from SolitaireBoard import *
-from SolitaireRulebook import *
+import sys
+from model.cards import *
+from view.SolitaireBoard import *
+from model.SolitaireRulebook import *
 
 
 MOVE      = 0
@@ -98,5 +99,8 @@ class Solitaire(Game):
 
 class QuitException(Exception): pass
 
-game = Solitaire()
-game.play()
+def __main__():
+    game = Solitaire()
+    game.play()
+
+__main__()
