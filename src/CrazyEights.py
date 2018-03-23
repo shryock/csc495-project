@@ -26,6 +26,7 @@ class CrazyEights:
             print("There was an 8 at the top of the pile, so it was reshuffled.")
             random.shuffle(self.drawPile.getContents())
 
+
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
 
@@ -68,7 +69,7 @@ class CrazyEights:
             print("\nGame Exited")
 
     def advance(self, player):
-        self.playPile.top().visible = True
+        self.playPile.top().makeVisible()
 
         if player.isA(HumanPlayer):
             print("Deck: " + str(self.drawPile.top()))
@@ -109,12 +110,12 @@ class AIPlayer(Player):
 
     def receiveCard(self, card):
         self.hand = self.hand or Pile()
-        card.visible = False
+        card.makeInvisible()
         self.hand.receiveCard(card)
 
     def makeMove(self, game):
         allMoves = getMoves(self, game)
-        allMoves[0].card.visible = True
+        allMoves[0].card.makeVisible()
         print("\t", allMoves[0])
         return allMoves[0].make()
 
@@ -127,7 +128,7 @@ class HumanPlayer(Player):
 
     def receiveCard(self, card):
         self.hand = self.hand or Pile()
-        card.visible = True
+        card.makeVisible()
         self.hand.receiveCard(card)
 
     def makeMove(self, game):
@@ -162,10 +163,10 @@ class Move:
 
     def make(self):
         self.fromPile.getContents().remove(self.card)
-        if (isinstance(self.player, HumanPlayer)):
-            self.card.visible = True
-        if isinstance(self.player, AIPlayer) and self.type == "draw":
-            self.card.visible = False
+        if self.player.isA(HumanPlayer):
+            self.card.makeVisible()
+        if self.player.isA(AIPlayer) and self.type == "draw":
+            self.card.makeInvisible()
         self.toPile.receiveCard(self.card)
 
         if self.card.rank == "8" and self.type == "play":
@@ -181,17 +182,19 @@ class Move:
             # I really don't like doing this, but I'm going to because it's a hacky, temporary fix.
             return suitChoice
 
+
 def getMoves(player, game):
-    moves = []
+    playable_moves = []
     
     for card in player.hand:
         if game.canPlay(card):
-            moves.append(Move(card, player.hand, game.playPile, player, "play"))
+            play_a_card = Move(card, player.hand, game.playPile, player, "play")
+            playable_moves.append(play_a_card)
 
     game.suitChange = None
-    moves.append(Move(game.drawPile.top(), game.drawPile, player.hand, player, "draw"))
-
-    return moves
+    draw_a_card = Move(game.drawPile.top(), game.drawPile, player.hand, player, "draw")
+    playable_moves.append(draw_a_card)
+    return playable_moves
 
 
 def __main__():

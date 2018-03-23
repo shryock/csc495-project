@@ -22,6 +22,12 @@ class Card:
         else:
             return "%4s" % "[ ]"
 
+    def makeVisible(self):
+        self.visible = True
+
+    def makeInvisible(self):
+        self.visible = False
+
 # standard 52 card deck. We may want to add methods or variables
 # for containing Jokers or other stuff.
 class Deck:
