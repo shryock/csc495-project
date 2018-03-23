@@ -131,8 +131,20 @@ class Pile:
     def makeAllCardsVisible(self):
         for card in self.cards:
             card.visible = True
+    def isEmpty(self):
+        return len(self.cards) == 0
 
+    def replaceWith(self, otherPile):
+        self = otherPile.getContents()
+        self.makeAllCardsInvisible()
+        self.shuffle()
+        
+    def shuffle(self):
+        random.shuffle(self.getContents())
+        
 class Player:
+    name = ""
+
     # players start out with an empty hand
     def __init__(self, hand=None):
         self.hand = hand
@@ -141,6 +153,8 @@ class Player:
         if self.hand:
             self.hand.receiveCard(card)
 
+    def isA(self, otherPlayerType):
+        return isinstance(self, otherPlayerType)
 class Board:
     def __init__(self, piles=None):
         self.piles = piles or []
