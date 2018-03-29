@@ -1,5 +1,6 @@
 import Solitaire as sol
 import CrazyEights as crazy
+import CrazyEightsFSM as ceFSM
 
 def __main__():
     print("""
@@ -18,6 +19,7 @@ def __main__():
     Which would you like to play?
     1) Solitaire
     2) Crazy Eights
+    3) Crazy Eights (FSM)
 
     """)
 
@@ -26,6 +28,8 @@ def __main__():
         sol.__main__()
     elif gameChoice == 2:
         crazy.__main__()
+    elif gameChoice == 3:
+        ceFSM.__main__()
     else:
         print("Invalid Choice... Goodbye.")
 
