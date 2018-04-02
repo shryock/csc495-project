@@ -29,7 +29,30 @@ class CrazyEights:
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
 
-    def showGameBanner(self):
+
+    def setup(self, unused):
+        self.state = "running"
+
+        self.players = []
+        self.players.append(HumanPlayer())
+        for i in range(0, CrazyEights.NUMBER_AI_PLAYERS):
+            self.players.append(AIPlayer(i))
+
+        self.suitChange = None
+
+        deck = Deck()
+        deck.shuffle()
+        deck.distributeCardsToPlayers(5, self.players)
+
+        self.drawPile = Pile(deck.listOfCards)
+        while (self.drawPile.top().rank == "8"):
+            print("There was an 8 at the top of the pile, so it was reshuffled.")
+            random.shuffle(self.drawPile.getContents())
+
+
+        self.playPile = Pile()
+        self.drawPile.giveOneCard(self.playPile)
+    def showGameBanner(self, none):
         print("\n"*2)
         print(" -----------------------------------------------")
         print("|                CRAZY EIGHTS                   |")
@@ -49,6 +72,9 @@ class CrazyEights:
         else:
             winner = "Computer Player " + str(player.index)
 
+    def checkWinCondition(self, player):
+        return len(player.hand) == 0
+
     def run(self):
         game = self
         try:
@@ -66,6 +92,18 @@ class CrazyEights:
             print(winner, "won the game in %s rounds!" % str(roundNumber-1))
         except KeyboardInterrupt:
             print("\nGame Exited")
+
+    def printNextRound(self, player):
+        self.playPile.top().makeVisible()
+
+        if player.isA(HumanPlayer):
+            print("Deck: " + str(self.drawPile.top()))
+            print("Play Pile: " + str(self.playPile.top()))
+            print("Your hand: " + str(player.hand))
+        elif player.isA(AIPlayer):
+            print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
+        time.sleep(1)
+
 
     def advance(self, player):
         self.playPile.top().makeVisible()
@@ -135,16 +173,15 @@ class HumanPlayer(Player):
         for index, move in enumerate(allMoves):
             print("   %i. %s" % (index+1, str(move)))
         playerMove = input("Choose your next move: ")
-        while True:
-            try:
-                index = int(playerMove)
-                if index > len(allMoves) or index <= 0:
-                    raise ValueError
-                else:
-                    break
-            except ValueError:
-                playerMove = input("Choose your next move: ")
+        index = int(playerMove)
+        if index > len(allMoves) or index <= 0:
+            self.lastMoveWasValid = False
+            return None
+        self.lastMoveWasValid = True
         return allMoves[int(playerMove)-1].make()
+
+    def madeValidMove(self, state):
+        return self.lastMoveWasValid
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):
@@ -196,9 +233,3 @@ def getMoves(player, game):
     return playable_moves
 
 
-def __main__():
-    game = CrazyEights()
-    game.run()
-
-if __name__ == '__main__':
-    __main__()
