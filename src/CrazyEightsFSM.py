@@ -2,6 +2,9 @@ from model.FiniteStateMachine import *
 from model.cards import *
 import time
 
+def returnTrue(state):
+    return True
+
 class CrazyEightsFSM():
 
     NUMBER_AI_PLAYERS = 3
@@ -11,8 +14,8 @@ class CrazyEightsFSM():
 
     def __init__(self):
         self.fsm = FiniteStateMachine()
-        start = Start("Setup CrazyEights", self.setup)
-        play = Play("Playing CrazyEights", self.run)
+        start = Start("Setup CrazyEights", onEntry=self.setup)
+        play = Play("Playing CrazyEights", onEntry=self.run)
         goal = Goal("Ended CrazyEights")
 
         startToPlay = Transition(start, self.true, play)
@@ -27,7 +30,7 @@ class CrazyEightsFSM():
 
         self.fsm.run()
 
-    def setup(self):
+    def setup(self, unused):
         self.state = "running"
 
         self.players = []
@@ -50,7 +53,7 @@ class CrazyEightsFSM():
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
 
-    def showGameBanner(self):
+    def showGameBanner(self, unused):
         print("\n"*2)
         print(" -----------------------------------------------")
         print("|                CRAZY EIGHTS                   |")
@@ -70,23 +73,77 @@ class CrazyEightsFSM():
         else:
             winner = "Computer Player " + str(player.index)
 
-    def run(self):
-        game = self
-        try:
-            winner = "nobody "
-            roundNumber = 1
-            game.showGameBanner()
-            while game.state == "running" and roundNumber < self.ROUND_NUMBER_MAX:
-                game.showRoundNumber(roundNumber)
-                for player in self.players:
-                    game.state = self.advance(player)
-                    if (game.isOver()):
-                        winner = player.name
-                        break
-                roundNumber += 1
-            print(winner, "won the game in %s rounds!" % str(roundNumber-1))
-        except KeyboardInterrupt:
-            print("\nGame Exited")
+    def checkWinCondition(self, player):
+        return len(player.hand) == 0
+
+    def run(self, unused):
+        playerFSM = FiniteStateMachine()
+
+        human = self.players[0]
+        aiPlayer1 = self.players[1]
+        aiPlayer2 = self.players[2]
+        aiPlayer3 = self.players[3]
+
+        start = Start("Start player loop", (None, human), self.showGameBanner, self.printNextRound)
+        humanTurn = Play("Human Player", (self, aiPlayer1), human.makeMove, self.printNextRound)
+        aiPlayer1Turn = Play("AI Player 1", (self, aiPlayer2), aiPlayer1.makeMove, self.printNextRound)
+        aiPlayer2Turn = Play("AI Player 2", (self, aiPlayer3), aiPlayer2.makeMove, self.printNextRound)
+        aiPlayer3Turn = Play("AI Player 3", (self, human), aiPlayer3.makeMove, self.printNextRound)
+        humanWin = Goal("Win", self.announceWinner)
+        humanLoss = Fail("Lose", self.announceWinner)
+
+        # Begin player loop
+        startToHuman = Transition(start, returnTrue, humanTurn)
+
+        # Invalid input case
+        humanToHuman = Transition(humanTurn, lambda state: not human.madeValidMove, humanTurn)
+
+        # Defines the player loop
+        humanToAI1   = Transition(humanTurn, human.madeValidMove, aiPlayer1Turn)
+        ai1ToAI2     = Transition(aiPlayer1Turn, returnTrue, aiPlayer2Turn)
+        ai2ToAI3     = Transition(aiPlayer2Turn, returnTrue, aiPlayer3Turn)
+        ai3ToHuman   = Transition(aiPlayer3Turn, returnTrue, humanTurn)
+
+        #Defines win/loss conditions
+        humanToWin   = Transition(humanTurn, self.checkWinCondition, humanWin, human)
+        ai1ToLose    = Transition(aiPlayer1Turn, self.checkWinCondition, humanLoss, aiPlayer1)
+        ai2ToLose    = Transition(aiPlayer2Turn, self.checkWinCondition, humanLoss, aiPlayer2)
+        ai3ToLose    = Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
+
+        # TODO: add priority so that certain transitions are checked over others
+        humanTurn.addTransition(humanToWin)
+        aiPlayer1Turn.addTransition(ai1ToLose)
+        aiPlayer2Turn.addTransition(ai2ToLose)
+        aiPlayer3Turn.addTransition(ai3ToLose)
+
+        start.addTransition(startToHuman)
+        humanTurn.addTransition(humanToHuman)
+        humanTurn.addTransition(humanToAI1)
+        aiPlayer1Turn.addTransition(ai1ToAI2)
+        aiPlayer2Turn.addTransition(ai2ToAI3)
+        aiPlayer3Turn.addTransition(ai3ToHuman)
+
+        playerFSM.addState(start)
+        playerFSM.addState(humanTurn)
+        playerFSM.addState(aiPlayer1Turn)
+        playerFSM.addState(aiPlayer2Turn)
+        playerFSM.addState(aiPlayer3Turn)
+        playerFSM.addState(humanWin)
+        playerFSM.addState(humanLoss)
+
+        playerFSM.run()
+
+    def printNextRound(self, player):
+        self.playPile.top().makeVisible()
+
+        if player.isA(HumanPlayer):
+            print("Deck: " + str(self.drawPile.top()))
+            print("Play Pile: " + str(self.playPile.top()))
+            print("Your hand: " + str(player.hand))
+        elif player.isA(AIPlayer):
+            print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
+        time.sleep(1)
+
 
     def advance(self, player):
         self.playPile.top().makeVisible()
@@ -156,16 +213,15 @@ class HumanPlayer(Player):
         for index, move in enumerate(allMoves):
             print("   %i. %s" % (index+1, str(move)))
         playerMove = input("Choose your next move: ")
-        while True:
-            try:
-                index = int(playerMove)
-                if index > len(allMoves) or index <= 0:
-                    raise ValueError
-                else:
-                    break
-            except ValueError:
-                playerMove = input("Choose your next move: ")
+        index = int(playerMove)
+        if index > len(allMoves) or index <= 0:
+            self.lastMoveWasValid = False
+            return None
+        self.lastMoveWasValid = True
         return allMoves[int(playerMove)-1].make()
+
+    def madeValidMove(self, state):
+        return self.lastMoveWasValid
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):

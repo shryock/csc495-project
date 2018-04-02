@@ -26,7 +26,6 @@ class CrazyEights:
             print("There was an 8 at the top of the pile, so it was reshuffled.")
             random.shuffle(self.drawPile.getContents())
 
-
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
 
