@@ -30,32 +30,33 @@ class SolitaireFSM(Solitaire):
     def run(self, unused):
         playerFSM = FiniteStateMachine()
         human = self.players[0]
-        start = Start("Start player loop", (None, human), self.showGameBanner, self.true)
-        humanTurn = Play("Human Player", (self, human), self.play, self.true)
+        start = Start("Start")
+        #                 name of state,   onentry    onexit    parameters as tuple
+        humanTurn = Play("Human Player", (self, human), self.play)
+        errorState = Play("Invalid Move", (self, human) )
         humanWin = Goal("Win", self.announceWinner)
         
-        # Begin player loop
-        startToHuman = Transition(start, returnTrue, humanTurn)
-
-        # Invalid input case
-        humanToHuman = Transition(humanTurn, lambda move: not self.checkValid, humanTurn)
-
+        startToHuman = Transition(start, self.true, humanTurn)
+        
         # Defines the player loop
         humanToSelf   = Transition(humanTurn, self.checkValid, humanTurn)
+        humanError = Transition(humanTurn, lambda x: not self.checkValid, errorState)
+        errorToHuman = Transition(errorState,  self.true,  humanTurn)
 
         #Defines win/loss conditions
         humanToWin   = Transition(humanTurn, self.checkWinCondition, humanWin, human)
-
+        
         # TODO: add priority so that certain transitions are checked over others
-        humanTurn.addTransition(humanToWin)
-
         start.addTransition(startToHuman)
-        humanTurn.addTransition(humanToHuman)
+        humanTurn.addTransition(humanToWin) 
+        humanTurn.addTransition(humanToSelf)
+        humanTurn.addTransition(humanError)
+        errorState.addTransition(errorToHuman)
 
-        playerFSM.addState(start)
         playerFSM.addState(humanTurn)
         playerFSM.addState(humanWin)
-
+        playerFSM.addState(start)
+        playerFSM.addState(errorToHuman)
         playerFSM.run()
 
 

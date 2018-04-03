@@ -20,23 +20,15 @@ class Solitaire(Game):
         self.rulebook = SolitaireRulebook()
         self.index = -1
         self.moves = self.rulebook.getAllPossibleMoves(self.board)
-        self.valid = False
+        self.valid = True
         self.moveCount = 0
+        self.showGameBanner(unused)
 
     def play(self, unused):
         try:
-            self.moves = self.rulebook.getAllPossibleMoves(self.board)
-            print(repr(self.board), end="\n\n")
-            print(self.getMoveDialogue(self.moves))
-            nextMove = input("Choose your next move: ")
-            index = int(nextMove)
-            if not (index > len(self.moves) or index <= 0):
-                self.index = index
-                self.valid = True
+            if self.valid:
                 self.executeMove(self.moves[self.index - 1])
                 self.moveCount += 1
-            else:
-                self.valid = False
         except (KeyboardInterrupt, QuitException):
             print("\nGame Exited")
             exit()
@@ -44,8 +36,14 @@ class Solitaire(Game):
         
         
     def checkValid(self, unused):
-        return self.valid
-            
+        self.moves = self.rulebook.getAllPossibleMoves(self.board)
+        print(repr(self.board), end="\n\n")
+        print(self.getMoveDialogue(self.moves))
+        nextMove = input("Choose your next move: ")
+        self.index = int(nextMove)  
+        self.valid = not (self.index > len(self.moves) or self.index <= 0)
+        return self.valid 
+
     def checkWinCondition(self, unused):
         for pile in self.board.suitPiles:
             if len(pile) < 13:
