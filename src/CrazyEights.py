@@ -1,34 +1,12 @@
 import os
 import time
 from model.cards import *
+from model.FiniteStateMachine import *
 
 class CrazyEights:
 
     NUMBER_AI_PLAYERS = 3
     ROUND_NUMBER_MAX = 400
-
-    def __init__(self):
-        self.state = "running"
-
-        self.players = []
-        self.players.append(HumanPlayer())
-        for i in range(0, CrazyEights.NUMBER_AI_PLAYERS):
-            self.players.append(AIPlayer(i))
-
-        self.suitChange = None
-
-        deck = Deck()
-        deck.shuffle()
-        deck.distributeCardsToPlayers(5, self.players)
-
-        self.drawPile = Pile(deck.listOfCards)
-        while (self.drawPile.top().rank == "8"):
-            print("There was an 8 at the top of the pile, so it was reshuffled.")
-            random.shuffle(self.drawPile.getContents())
-
-        self.playPile = Pile()
-        self.drawPile.giveOneCard(self.playPile)
-
 
     def setup(self, unused):
         self.state = "running"
@@ -52,6 +30,9 @@ class CrazyEights:
 
         self.playPile = Pile()
         self.drawPile.giveOneCard(self.playPile)
+
+        self.winner = None
+
     def showGameBanner(self, none):
         print("\n"*2)
         print(" -----------------------------------------------")
@@ -63,35 +44,14 @@ class CrazyEights:
         print("==================== Round %s ====================" % str(roundNumber))
         print("\n")
 
-    def isOver(self):
-        return self.state == "gameover"
+    def playerWins(self, unused):
+        print("You won the game!")
 
-    def announceWinner(self):
-        if player.isA(HumanPlayer):
-            winner = "You"
-        else:
-            winner = "Computer Player " + str(player.index)
+    def playerLoses(self, unused):
+        print("You lost the game!")
 
     def checkWinCondition(self, player):
         return len(player.hand) == 0
-
-    def run(self):
-        game = self
-        try:
-            winner = "nobody "
-            roundNumber = 1
-            game.showGameBanner()
-            while game.state == "running" and roundNumber < self.ROUND_NUMBER_MAX:
-                game.showRoundNumber(roundNumber)
-                for player in self.players:
-                    game.state = self.advance(player)
-                    if (game.isOver()):
-                        winner = player.name
-                        break
-                roundNumber += 1
-            print(winner, "won the game in %s rounds!" % str(roundNumber-1))
-        except KeyboardInterrupt:
-            print("\nGame Exited")
 
     def printNextRound(self, player):
         self.playPile.top().makeVisible()
@@ -104,28 +64,6 @@ class CrazyEights:
             print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
         time.sleep(1)
 
-
-    def advance(self, player):
-        self.playPile.top().makeVisible()
-
-        if player.isA(HumanPlayer):
-            print("Deck: " + str(self.drawPile.top()))
-            print("Play Pile: " + str(self.playPile.top()))
-            print("Your hand: " + str(player.hand))
-        elif player.isA(AIPlayer):
-            print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
-        
-        self.suitChange = player.makeMove(self)
-        
-        if player.hand.isEmpty():
-            return "gameover"
-        if self.drawPile.isEmpty():
-            self.drawPile.replaceWith(self.playPile)
-            self.drawPile.giveOneCard(self.playPile)
-
-        time.sleep(1)
-        return "running"
-
     def canPlay(self, card):
         playPile = self.playPile
         topCard = playPile.top()
@@ -136,6 +74,19 @@ class CrazyEights:
         else: 
             canBePlayed = (card.suit == topCard.suit) or (card.rank == topCard.rank) or (card.rank == "8")
         return canBePlayed
+
+    def getMoves(self, player):
+        playable_moves = []
+        
+        for card in player.hand:
+            if self.canPlay(card):
+                play_a_card = Move(card, player.hand, self.playPile, player, "play")
+                playable_moves.append(play_a_card)
+
+        self.suitChange = None
+        draw_a_card = Move(self.drawPile.top(), self.drawPile, player.hand, player, "draw")
+        playable_moves.append(draw_a_card)
+        return playable_moves
 
 class AIPlayer(Player):
     
@@ -151,7 +102,7 @@ class AIPlayer(Player):
         self.hand.receiveCard(card)
 
     def makeMove(self, game):
-        allMoves = getMoves(self, game)
+        allMoves = game.getMoves(self)
         allMoves[0].card.makeVisible()
         print("\t", allMoves[0])
         return allMoves[0].make()
@@ -161,6 +112,7 @@ class HumanPlayer(Player):
 
     def __init__(self):
         self.hand = None
+        self.playerMove = -1
         Player.__init__(self, self.hand)
 
     def receiveCard(self, card):
@@ -169,19 +121,45 @@ class HumanPlayer(Player):
         self.hand.receiveCard(card)
 
     def makeMove(self, game):
-        allMoves = getMoves(self, game)
+        moveFSM = FiniteStateMachine()
+
+        start = Start("Start Player Move loop", self.printMove, payload=(game, None))
+        makeMove = Play("Choose move", self.chooseMove, payload=(game, None))
+        validMove = Goal("Valid move", self.executeMove, payload=(game, None))
+
+        startToMakeMove = Transition(start, lambda unused: True, makeMove)
+        makeMoveToValidMove = Transition(makeMove, self.madeValidMove, validMove, payload=game)
+        makeMoveToMakeMove = Transition(makeMove, lambda game: not self.madeValidMove(game), makeMove, payload=game)
+
+        start.addTransition(startToMakeMove)
+        makeMove.addTransition(makeMoveToValidMove)
+        makeMove.addTransition(makeMoveToMakeMove)
+
+        moveFSM.addState(start)
+        moveFSM.addState(makeMove)
+        moveFSM.addState(validMove)
+
+        moveFSM.run()
+
+    def madeValidMove(self, game):
+        print("Player move %d" % self.playerMove)
+        if self.playerMove > len(game.getMoves(self)) or self.playerMove <= 0:
+            return False
+        return True
+
+    def printMove(self, game):
+        allMoves = game.getMoves(self)
         for index, move in enumerate(allMoves):
             print("   %i. %s" % (index+1, str(move)))
-        playerMove = input("Choose your next move: ")
-        index = int(playerMove)
-        if index > len(allMoves) or index <= 0:
-            self.lastMoveWasValid = False
-            return None
-        self.lastMoveWasValid = True
-        return allMoves[int(playerMove)-1].make()
 
-    def madeValidMove(self, state):
-        return self.lastMoveWasValid
+    def chooseMove(self, game):
+        try:
+            self.playerMove = int(input("Choose your next move: "))
+        except ValueError:
+            self.playerMove = -1
+
+    def executeMove(self, game):
+        game.getMoves(self)[self.playerMove-1].make()
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):
@@ -217,19 +195,3 @@ class Move:
 
             # I really don't like doing this, but I'm going to because it's a hacky, temporary fix.
             return suitChoice
-
-
-def getMoves(player, game):
-    playable_moves = []
-    
-    for card in player.hand:
-        if game.canPlay(card):
-            play_a_card = Move(card, player.hand, game.playPile, player, "play")
-            playable_moves.append(play_a_card)
-
-    game.suitChange = None
-    draw_a_card = Move(game.drawPile.top(), game.drawPile, player.hand, player, "draw")
-    playable_moves.append(draw_a_card)
-    return playable_moves
-
-

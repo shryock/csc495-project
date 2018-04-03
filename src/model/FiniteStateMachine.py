@@ -23,11 +23,11 @@ class FiniteStateMachine():
 
 class State():
 
-    def __init__(self, name, payload=None, onEntry=None, onExit=None):
+    def __init__(self, name, onEntry=None, onExit=None, payload=None):
         self.name = name
-        self.payload = payload
         if onEntry is not None: self.onEntry = onEntry
         if onExit  is not None: self.onExit  = onExit
+        self.payload = payload
         self.transitions = []
 
     def __str__(self):
@@ -39,18 +39,15 @@ class State():
                 exitParam = None
                 if self.payload is not None: exitParam = self.payload[1]
                 self.onExit(exitParam)
-                print(str(transition))
                 entryParam = None
                 if transition.end.payload is not None: entryParam = transition.end.payload[0]
                 transition.end.onEntry(entryParam)
                 return transition.end
         return self
 
-    def onEntry(self, payload=None):
-        print("Arriving at %s" % str(self))
+    def onEntry(self, payload=None): pass
 
-    def onExit(self, payload=None):
-        print("Leaving %s" % str(self))
+    def onExit(self, payload=None): pass
 
     def addTransition(self, transition):
         self.transitions.append(transition)

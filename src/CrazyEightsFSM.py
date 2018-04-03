@@ -3,8 +3,7 @@ from model.cards import *
 from CrazyEights import *
 import time
 
-def returnTrue(state):
-    return True
+def returnTrue(unused): return True
 
 class CrazyEightsFSM(CrazyEights):
 
@@ -15,8 +14,8 @@ class CrazyEightsFSM(CrazyEights):
 
     def __init__(self):
         self.fsm = FiniteStateMachine()
-        start = Start("Setup CrazyEights", onEntry=self.setup)
-        play = Play("Playing CrazyEights", onEntry=self.run)
+        start = Start("Setup CrazyEights", self.setup)
+        play = Play("Playing CrazyEights", self.run)
         goal = Goal("Ended CrazyEights")
 
         startToPlay = Transition(start, self.true, play)
@@ -31,7 +30,6 @@ class CrazyEightsFSM(CrazyEights):
 
         self.fsm.run()
 
-
     def run(self, unused):
         playerFSM = FiniteStateMachine()
 
@@ -40,22 +38,19 @@ class CrazyEightsFSM(CrazyEights):
         aiPlayer2 = self.players[2]
         aiPlayer3 = self.players[3]
 
-        start = Start("Start player loop", (None, human), self.showGameBanner, self.printNextRound)
-        humanTurn = Play("Human Player", (self, aiPlayer1), human.makeMove, self.printNextRound)
-        aiPlayer1Turn = Play("AI Player 1", (self, aiPlayer2), aiPlayer1.makeMove, self.printNextRound)
-        aiPlayer2Turn = Play("AI Player 2", (self, aiPlayer3), aiPlayer2.makeMove, self.printNextRound)
-        aiPlayer3Turn = Play("AI Player 3", (self, human), aiPlayer3.makeMove, self.printNextRound)
-        humanWin = Goal("Win", self.announceWinner)
-        humanLoss = Fail("Lose", self.announceWinner)
+        start = Start("Start player loop", self.showGameBanner, self.printNextRound, (None, human))
+        humanTurn = Play("Human Player", human.makeMove, self.printNextRound, (self, aiPlayer1))
+        aiPlayer1Turn = Play("AI Player 1", aiPlayer1.makeMove, self.printNextRound, (self, aiPlayer2))
+        aiPlayer2Turn = Play("AI Player 2", aiPlayer2.makeMove, self.printNextRound, (self, aiPlayer3))
+        aiPlayer3Turn = Play("AI Player 3", aiPlayer3.makeMove, self.printNextRound, (self, human))
+        humanWin = Goal("Win", self.playerWins)
+        humanLoss = Fail("Lose", self.playerLoses)
 
         # Begin player loop
         startToHuman = Transition(start, returnTrue, humanTurn)
 
-        # Invalid input case
-        humanToHuman = Transition(humanTurn, lambda state: not human.madeValidMove, humanTurn)
-
         # Defines the player loop
-        humanToAI1   = Transition(humanTurn, human.madeValidMove, aiPlayer1Turn)
+        humanToAI1   = Transition(humanTurn, returnTrue, aiPlayer1Turn)
         ai1ToAI2     = Transition(aiPlayer1Turn, returnTrue, aiPlayer2Turn)
         ai2ToAI3     = Transition(aiPlayer2Turn, returnTrue, aiPlayer3Turn)
         ai3ToHuman   = Transition(aiPlayer3Turn, returnTrue, humanTurn)
@@ -73,7 +68,6 @@ class CrazyEightsFSM(CrazyEights):
         aiPlayer3Turn.addTransition(ai3ToLose)
 
         start.addTransition(startToHuman)
-        humanTurn.addTransition(humanToHuman)
         humanTurn.addTransition(humanToAI1)
         aiPlayer1Turn.addTransition(ai1ToAI2)
         aiPlayer2Turn.addTransition(ai2ToAI3)
@@ -91,12 +85,11 @@ class CrazyEightsFSM(CrazyEights):
 
 def __main__():
     
-    try:
+    #try:
         game = CrazyEightsFSM()
-        game.run()
-    except:
-        print("\n\nGame Ended unexpectedly.\n")
-        exit()
+    # except:
+    #     print("\n\nGame Ended unexpectedly.\n")
+    #     exit()
 
 if __name__ == '__main__':
     __main__()
