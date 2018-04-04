@@ -18,9 +18,6 @@ class SolitaireFSM(Solitaire):
         startToPlay = Transition(start, self.true, play)
         playToGoal = Transition(play, self.true, goal)
         
-        start.addTransition(startToPlay)
-        play.addTransition(playToGoal)
-
         self.fsm.addState(start)
         self.fsm.addState(play)
         self.fsm.addState(goal)
@@ -46,13 +43,6 @@ class SolitaireFSM(Solitaire):
         #Defines win/loss conditions
         humanToWin   = Transition(humanTurn, self.checkWinCondition, humanWin)
         
-        # TODO: add priority so that certain transitions are checked over others
-        start.addTransition(startToHuman)
-        humanTurn.addTransition(humanToWin) 
-        humanTurn.addTransition(humanToSelf)
-        humanTurn.addTransition(humanError)
-        errorState.addTransition(errorToHuman)
-
         playerFSM.addState(humanTurn)
         playerFSM.addState(humanWin)
         playerFSM.addState(start)
