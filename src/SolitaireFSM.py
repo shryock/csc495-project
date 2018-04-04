@@ -15,8 +15,8 @@ class SolitaireFSM(Solitaire):
         play = Play("Playing Solitaire", self.run)
         goal = Goal("Ended Solitaire")
         
-        startToPlay = Transition(start, self.true, play)
-        playToGoal = Transition(play, self.true, goal)
+        Transition(start, self.true, play)
+        Transition(play, self.true, goal)
         
         self.fsm.addState(start)
         self.fsm.addState(play)
@@ -33,15 +33,15 @@ class SolitaireFSM(Solitaire):
         errorState = Play("Invalid Move" )
         humanWin = Goal("Win", self.announceWinner)
         
-        startToHuman = Transition(start, self.true, humanTurn)
+        Transition(start, self.true, humanTurn)
         
         # Defines the player loop
-        humanToSelf   = Transition(humanTurn, self.checkValid, humanTurn)
-        humanError = Transition(humanTurn, lambda: not self.checkValid, errorState)
-        errorToHuman = Transition(errorState,  self.true,  humanTurn)
+        Transition(humanTurn, self.checkValid, humanTurn)
+        Transition(humanTurn, lambda: not self.checkValid, errorState)
+        Transition(errorState,  self.true,  humanTurn)
 
         #Defines win/loss conditions
-        humanToWin   = Transition(humanTurn, self.checkWinCondition, humanWin)
+        Transition(humanTurn, self.checkWinCondition, humanWin)
         
         playerFSM.addState(humanTurn)
         playerFSM.addState(humanWin)
