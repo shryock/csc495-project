@@ -8,7 +8,7 @@ class CrazyEights:
     NUMBER_AI_PLAYERS = 3
     ROUND_NUMBER_MAX = 400
 
-    def setup(self, unused):
+    def setup(self):
         self.state = "running"
 
         self.players = []
@@ -33,7 +33,7 @@ class CrazyEights:
 
         self.winner = None
 
-    def showGameBanner(self, none):
+    def showGameBanner(self):
         print("\n"*2)
         print(" -----------------------------------------------")
         print("|                CRAZY EIGHTS                   |")
@@ -44,10 +44,10 @@ class CrazyEights:
         print("==================== Round %s ====================" % str(roundNumber))
         print("\n")
 
-    def playerWins(self, unused):
+    def playerWins(self):
         print("You won the game!")
 
-    def playerLoses(self, unused):
+    def playerLoses(self):
         print("You lost the game!")
 
     def checkWinCondition(self, player):
@@ -127,7 +127,7 @@ class HumanPlayer(Player):
         makeMove = Play("Choose move", self.chooseMove, payload=(game, None))
         validMove = Goal("Valid move", self.executeMove, payload=(game, None))
 
-        startToMakeMove = Transition(start, lambda unused: True, makeMove)
+        startToMakeMove = Transition(start, lambda: True, makeMove)
         makeMoveToValidMove = Transition(makeMove, self.madeValidMove, validMove, payload=game)
         makeMoveToMakeMove = Transition(makeMove, lambda game: not self.madeValidMove(game), makeMove, payload=game)
 

@@ -3,14 +3,14 @@ from model.cards import *
 from CrazyEights import *
 import time
 
-def returnTrue(unused): return True
+def returnTrue(): return True
 
 class CrazyEightsFSM(CrazyEights):
 
     NUMBER_AI_PLAYERS = 3
     ROUND_NUMBER_MAX = 400
 
-    def true(self, state) : return True
+    def true(self) : return True
 
     def __init__(self):
         self.fsm = FiniteStateMachine()
@@ -30,7 +30,7 @@ class CrazyEightsFSM(CrazyEights):
 
         self.fsm.run()
 
-    def run(self, unused):
+    def run(self):
         playerFSM = FiniteStateMachine()
 
         human = self.players[0]
@@ -85,11 +85,11 @@ class CrazyEightsFSM(CrazyEights):
 
 def __main__():
     
-    #try:
+    try:
         game = CrazyEightsFSM()
-    # except:
-    #     print("\n\nGame Ended unexpectedly.\n")
-    #     exit()
+    except:
+        print("\n\nGame Ended unexpectedly.\n")
+        exit()
 
 if __name__ == '__main__':
     __main__()

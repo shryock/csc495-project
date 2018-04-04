@@ -14,12 +14,18 @@ class FiniteStateMachine():
         state = self.start
         entryParam, exitParam = state.payload or (None, None)
 
-        state.onEntry(entryParam)
+        if entryParam is not None:
+            state.onEntry(entryParam)
+        else:
+            state.onEntry()
         while True:
             state = state.step()
             if state.quit():
                 break
-        return state.onExit(exitParam)
+        if exitParam is not None:
+            return state.onExit(exitParam)
+        else:
+            return state.onExit()
 
 class State():
 
@@ -34,15 +40,32 @@ class State():
         return str(self.name)
 
     def step(self):
+        # TODO: this is too much duplicate code; doing it this way to handle default payload
         for transition in self.transitions:
-            if transition.guard(transition.payload):
-                exitParam = None
-                if self.payload is not None: exitParam = self.payload[1]
-                self.onExit(exitParam)
-                entryParam = None
-                if transition.end.payload is not None: entryParam = transition.end.payload[0]
-                transition.end.onEntry(entryParam)
-                return transition.end
+            if transition.payload is not None:
+                if transition.guard(transition.payload):
+                    if self.payload is not None:
+                        self.onExit(self.payload[1])
+                    else:
+                        self.onExit()
+                    entryParam = None
+                    if transition.end.payload is not None and transition.end.payload[0] is not None:
+                        transition.end.onEntry(transition.end.payload[0])
+                    else:
+                        transition.end.onEntry()
+                    return transition.end
+            else:
+                if transition.guard():
+                    if self.payload is not None:
+                        self.onExit(self.payload[1])
+                    else:
+                        self.onExit()
+                    entryParam = None
+                    if transition.end.payload is not None and transition.end.payload[0] is not None:
+                        transition.end.onEntry(transition.end.payload[0])
+                    else:
+                        transition.end.onEntry()
+                    return transition.end
         return self
 
     def onEntry(self, payload=None): pass
