@@ -32,7 +32,7 @@ class SolitaireFSM(Solitaire):
         human = self.players[0]
         start = Start("Start")
         #                 name of state,   onentry    onexit    parameters as tuple
-        humanTurn = Play("Human Player", (self, human), self.play)
+        humanTurn = Play("Human Player", self.play, self.true, (self, human) )
         errorState = Play("Invalid Move", (self, human) )
         humanWin = Goal("Win", self.announceWinner)
         

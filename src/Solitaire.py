@@ -39,9 +39,12 @@ class Solitaire(Game):
         self.moves = self.rulebook.getAllPossibleMoves(self.board)
         print(repr(self.board), end="\n\n")
         print(self.getMoveDialogue(self.moves))
-        nextMove = input("Choose your next move: ")
-        self.index = int(nextMove)  
-        self.valid = not (self.index > len(self.moves) or self.index <= 0)
+        try:
+            nextMove = input("Choose your next move: ")
+            self.index = int(nextMove) 
+            self.valid = not (self.index > len(self.moves) or self.index <= 0)
+        except ValueError:
+            self.valid = False
         return self.valid 
 
     def checkWinCondition(self, unused):
