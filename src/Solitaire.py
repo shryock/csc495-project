@@ -13,39 +13,51 @@ QUIT      = 4
 class Solitaire(Game):
     HOW_MANY    = [1,2,3,4,5,6,7,0,0,0,0,0,24]
 
-    def setup(self):
+    def setup(self, unused):
         self.players = [Player()]
         self.piles = Deck().distributeCardsToPiles(Solitaire.HOW_MANY)
         self.board = SolitaireBoard(self.piles)
         self.rulebook = SolitaireRulebook()
-
+        self.index = -1
+        self.moves = self.rulebook.getAllPossibleMoves(self.board)
+        self.valid = True
         self.moveCount = 0
+        self.showGameBanner(unused)
 
-    def play(self):
+    def play(self, unused):
         try:
-            moves = self.rulebook.getAllPossibleMoves(self.board)
-            while moves:
-                print(repr(self.board), end="\n\n")
-                print(self.getMoveDialogue(moves))
-                nextMove = input("Choose your next move: ")
-
-                while True:
-                    try:
-                        index = int(nextMove)
-                        if index > len(moves) or index <= 0:
-                            raise ValueError
-                        else:
-                            break
-                    except ValueError:
-                        nextMove = input("Choose your next move: ")
-
-                self.executeMove(moves[index - 1])
+            if self.valid:
+                self.executeMove(self.moves[self.index - 1])
                 self.moveCount += 1
-                print("\n")
-                moves = self.rulebook.getAllPossibleMoves(self.board)
-            print("Game Over")
         except (KeyboardInterrupt, QuitException):
             print("\nGame Exited")
+            exit()
+
+        
+        
+    def checkValid(self, unused):
+        self.moves = self.rulebook.getAllPossibleMoves(self.board)
+        print(repr(self.board), end="\n\n")
+        print(self.getMoveDialogue(self.moves))
+        nextMove = input("Choose your next move: ")
+        self.index = int(nextMove)  
+        self.valid = not (self.index > len(self.moves) or self.index <= 0)
+        return self.valid 
+
+    def checkWinCondition(self, unused):
+        for pile in self.board.suitPiles:
+            if len(pile) < 13:
+                return False
+        return True
+
+    def announceWinner(self):
+        print("\n\nCongratulations!! You Win!!\n")
+
+    def showGameBanner(self, none):
+        print("\n"*2)
+        print(" -----------------------------------------------")
+        print("|                  SOLITAIRE                    |")
+        print(" -----------------------------------------------")
 
     def getMoveDialogue(self, moves):
         return "\n".join(["%d. %s" % (i + 1, moves[i][0]) for i in range(len(moves))])
