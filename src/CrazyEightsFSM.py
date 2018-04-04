@@ -21,9 +21,6 @@ class CrazyEightsFSM(CrazyEights):
         startToPlay = Transition(start, self.true, play)
         playToGoal = Transition(play, self.true, goal)
 
-        start.addTransition(startToPlay)
-        play.addTransition(playToGoal)
-
         self.fsm.addState(start)
         self.fsm.addState(play)
         self.fsm.addState(goal)
@@ -60,18 +57,6 @@ class CrazyEightsFSM(CrazyEights):
         ai1ToLose    = Transition(aiPlayer1Turn, self.checkWinCondition, humanLoss, aiPlayer1)
         ai2ToLose    = Transition(aiPlayer2Turn, self.checkWinCondition, humanLoss, aiPlayer2)
         ai3ToLose    = Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
-
-        # TODO: add priority so that certain transitions are checked over others
-        humanTurn.addTransition(humanToWin)
-        aiPlayer1Turn.addTransition(ai1ToLose)
-        aiPlayer2Turn.addTransition(ai2ToLose)
-        aiPlayer3Turn.addTransition(ai3ToLose)
-
-        start.addTransition(startToHuman)
-        humanTurn.addTransition(humanToAI1)
-        aiPlayer1Turn.addTransition(ai1ToAI2)
-        aiPlayer2Turn.addTransition(ai2ToAI3)
-        aiPlayer3Turn.addTransition(ai3ToHuman)
 
         playerFSM.addState(start)
         playerFSM.addState(humanTurn)

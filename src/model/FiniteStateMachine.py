@@ -100,6 +100,7 @@ class Transition():
         self.guard = guard
         self.end   = end
         self.payload = payload
+        start.addTransition(self)
 
     def __str__(self):
         return str(self.start) + ":" + str(self.guard.__name__) + ":" + str(self.end)
