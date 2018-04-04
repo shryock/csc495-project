@@ -18,8 +18,8 @@ class CrazyEightsFSM(CrazyEights):
         play = Play("Playing CrazyEights", self.run)
         goal = Goal("Ended CrazyEights")
 
-        startToPlay = Transition(start, self.true, play)
-        playToGoal = Transition(play, self.true, goal)
+        Transition(start, self.true, play)
+        Transition(play, self.true, goal)
 
         self.fsm.addState(start)
         self.fsm.addState(play)
@@ -53,10 +53,10 @@ class CrazyEightsFSM(CrazyEights):
         ai3ToHuman   = Transition(aiPlayer3Turn, returnTrue, humanTurn)
 
         #Defines win/loss conditions
-        humanToWin   = Transition(humanTurn, self.checkWinCondition, humanWin, human)
-        ai1ToLose    = Transition(aiPlayer1Turn, self.checkWinCondition, humanLoss, aiPlayer1)
-        ai2ToLose    = Transition(aiPlayer2Turn, self.checkWinCondition, humanLoss, aiPlayer2)
-        ai3ToLose    = Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
+        Transition(humanTurn, self.checkWinCondition, humanWin, human)
+        Transition(aiPlayer1Turn, self.checkWinCondition, humanLoss, aiPlayer1)
+        Transition(aiPlayer2Turn, self.checkWinCondition, humanLoss, aiPlayer2)
+        Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
 
         playerFSM.addState(start)
         playerFSM.addState(humanTurn)
