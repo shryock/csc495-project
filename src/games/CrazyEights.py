@@ -2,7 +2,7 @@ import os
 import time
 from model.cards import *
 from model.FiniteStateMachine import *
-
+from model import Logger
 class CrazyEights:
 
     NUMBER_AI_PLAYERS = 3
@@ -24,7 +24,7 @@ class CrazyEights:
 
         self.drawPile = Pile(deck.listOfCards)
         while (self.drawPile.top().rank == "8"):
-            print("There was an 8 at the top of the pile, so it was reshuffled.")
+            Logger.log("There was an 8 at the top of the pile, so it was reshuffled.")
             random.shuffle(self.drawPile.getContents())
 
 
@@ -34,21 +34,21 @@ class CrazyEights:
         self.winner = None
 
     def showGameBanner(self):
-        print("\n"*2)
-        print(" -----------------------------------------------")
-        print("|                CRAZY EIGHTS                   |")
-        print(" -----------------------------------------------")
+        Logger.log("\n"*2)
+        Logger.log(" -----------------------------------------------")
+        Logger.log("|                CRAZY EIGHTS                   |")
+        Logger.log(" -----------------------------------------------")
 
     def showRoundNumber(self, roundNumber):
-        print("\n")
-        print("==================== Round %s ====================" % str(roundNumber))
-        print("\n")
+        Logger.log("\n")
+        Logger.log("==================== Round %s ====================" % str(roundNumber))
+        Logger.log("\n")
 
     def playerWins(self):
-        print("You won the game!")
+        Logger.log("You won the game!")
 
     def playerLoses(self):
-        print("You lost the game!")
+        Logger.log("You lost the game!")
 
     def checkWinCondition(self, player):
         return len(player.hand) == 0
@@ -57,11 +57,11 @@ class CrazyEights:
         self.playPile.top().makeVisible()
 
         if player.isA(HumanPlayer):
-            print("Deck: " + str(self.drawPile.top()))
-            print("Play Pile: " + str(self.playPile.top()))
-            print("Your hand: " + str(player.hand))
+            Logger.log("Deck: " + str(self.drawPile.top()))
+            Logger.log("Play Pile: " + str(self.playPile.top()))
+            Logger.log("Your hand: " + str(player.hand))
         elif player.isA(AIPlayer):
-            print("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
+            Logger.log("Computer Player %s's Hand: %s" % (player.index, str(player.hand)))
         time.sleep(1)
 
     def canPlay(self, card):
@@ -104,7 +104,7 @@ class AIPlayer(Player):
     def makeMove(self, game):
         allMoves = game.getMoves(self)
         allMoves[0].card.makeVisible()
-        print("\t", allMoves[0])
+        Logger.log("\t", allMoves[0])
         return allMoves[0].make()
 
 class HumanPlayer(Player):
@@ -142,7 +142,7 @@ class HumanPlayer(Player):
         moveFSM.run()
 
     def madeValidMove(self, game):
-        print("Player move %d" % self.playerMove)
+        Logger.log("Player move %d" % self.playerMove)
         if self.playerMove > len(game.getMoves(self)) or self.playerMove <= 0:
             return False
         return True
@@ -150,7 +150,7 @@ class HumanPlayer(Player):
     def printMove(self, game):
         allMoves = game.getMoves(self)
         for index, move in enumerate(allMoves):
-            print("   %i. %s" % (index+1, str(move)))
+            Logger.log("   %i. %s" % (index+1, str(move)))
 
     def chooseMove(self, game):
         try:
@@ -186,12 +186,12 @@ class Move:
         if self.card.rank == "8" and self.type == "play":
             suitChoiceInput = None
             if self.player.isA(HumanPlayer):
-                [print(str(i + 1) + ". ", suitCharacters[suits[i]]) for i in range(4)   ]
+                [Logger.log(str(i + 1) + ". ", suitCharacters[suits[i]]) for i in range(4)   ]
                 suitChoiceInput = input("Choose which suit to switch to: ")
             elif self.player.isA(AIPlayer):
                 suitChoiceInput = random.choice(range(1, 5))
             suitChoice = suits[int(suitChoiceInput)-1]
-            print("Suit has been changed to ", suitCharacters[suitChoice])
+            Logger.log("Suit has been changed to ", suitCharacters[suitChoice])
 
             # I really don't like doing this, but I'm going to because it's a hacky, temporary fix.
             return suitChoice

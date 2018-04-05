@@ -2,6 +2,7 @@ import sys
 from model.cards import *
 from view.SolitaireBoard import *
 from model.SolitaireRulebook import *
+from model import Logger
 
 
 MOVE      = 0
@@ -30,15 +31,16 @@ class Solitaire(Game):
                 self.executeMove(self.moves[self.index - 1])
                 self.moveCount += 1
         except (KeyboardInterrupt, QuitException):
-            print("\nGame Exited")
+            Logger.log("\nGame Exited")
             exit()
 
     def checkValid(self):
         self.moves = self.rulebook.getAllPossibleMoves(self.board)
-        print(repr(self.board), end="\n\n")
-        print(self.getMoveDialogue(self.moves))
+        Logger.log(repr(self.board) + '\n\n')
+        Logger.log(self.getMoveDialogue(self.moves))
         try:
-            nextMove = input("Choose your next move: ")
+            Logger.log("Choose your next move: ")
+            nextMove = input()
             self.index = int(nextMove) 
             self.valid = not (self.index > len(self.moves) or self.index <= 0)
         except ValueError:
@@ -52,13 +54,13 @@ class Solitaire(Game):
         return True
 
     def announceWinner(self):
-        print("\n\nCongratulations!! You Win!!\n")
+        Logger.log("\n\nCongratulations!! You Win!!\n")
 
     def showGameBanner(self):
-        print("\n"*2)
-        print(" -----------------------------------------------")
-        print("|                  SOLITAIRE                    |")
-        print(" -----------------------------------------------")
+        Logger.log("\n"*2)
+        Logger.log(" -----------------------------------------------")
+        Logger.log("|                  SOLITAIRE                    |")
+        Logger.log(" -----------------------------------------------")
 
     def getMoveDialogue(self, moves):
         return "\n".join(["%d. %s" % (i + 1, moves[i][0]) for i in range(len(moves))])

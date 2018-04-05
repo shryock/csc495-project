@@ -50,11 +50,7 @@ class SolitaireFSM(Solitaire):
         playerFSM.run()
 
 def __main__():
-    try:
-        game = SolitaireFSM()
-    except:
-        print("\n\nGame Ended unexpectedly.\n")
-        exit()
+    game = SolitaireFSM()
 
 if __name__ == '__main__':
     __main__()
