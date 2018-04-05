@@ -1,6 +1,6 @@
 from model.FiniteStateMachine import *
 from model.cards import *
-from CrazyEights import *
+from games.CrazyEights import *
 import time
 
 def returnTrue(): return True

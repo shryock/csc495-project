@@ -159,7 +159,7 @@ class HumanPlayer(Player):
             self.playerMove = -1
 
     def executeMove(self, game):
-        game.getMoves(self)[self.playerMove-1].make()
+        game.suitChange = game.getMoves(self)[self.playerMove-1].make()
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):

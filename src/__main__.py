@@ -1,5 +1,5 @@
-import SolitaireFSM as sol
-import CrazyEightsFSM as crazy
+import games.SolitaireFSM as sol
+import games.CrazyEightsFSM as crazy
 
 def __main__():
     print("""

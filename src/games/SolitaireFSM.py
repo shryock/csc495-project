@@ -1,5 +1,5 @@
 from model.cards import *
-from Solitaire import *
+from games.Solitaire import *
 from model.FiniteStateMachine import *
 
 def returnTrue():
