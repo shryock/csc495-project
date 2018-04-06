@@ -46,17 +46,17 @@ class CrazyEightsFSM(CrazyEights):
         # Begin player loop
         startToHuman = Transition(start, returnTrue, humanTurn)
 
-        # Defines the player loop
-        humanToAI1   = Transition(humanTurn, returnTrue, aiPlayer1Turn)
-        ai1ToAI2     = Transition(aiPlayer1Turn, returnTrue, aiPlayer2Turn)
-        ai2ToAI3     = Transition(aiPlayer2Turn, returnTrue, aiPlayer3Turn)
-        ai3ToHuman   = Transition(aiPlayer3Turn, returnTrue, humanTurn)
-
         #Defines win/loss conditions
         Transition(humanTurn, self.checkWinCondition, humanWin, human)
         Transition(aiPlayer1Turn, self.checkWinCondition, humanLoss, aiPlayer1)
         Transition(aiPlayer2Turn, self.checkWinCondition, humanLoss, aiPlayer2)
         Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
+
+        # Defines the player loop
+        Transition(humanTurn, returnTrue, aiPlayer1Turn)
+        Transition(aiPlayer1Turn, returnTrue, aiPlayer2Turn)
+        Transition(aiPlayer2Turn, returnTrue, aiPlayer3Turn)
+        Transition(aiPlayer3Turn, returnTrue, humanTurn)
 
         playerFSM.addState(start)
         playerFSM.addState(humanTurn)

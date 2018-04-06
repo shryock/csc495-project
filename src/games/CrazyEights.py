@@ -83,7 +83,7 @@ class CrazyEights:
                 play_a_card = Move(card, player.hand, self.playPile, player, "play")
                 playable_moves.append(play_a_card)
 
-        self.suitChange = None
+        #self.suitChange = None
         draw_a_card = Move(self.drawPile.top(), self.drawPile, player.hand, player, "draw")
         playable_moves.append(draw_a_card)
         return playable_moves
@@ -105,7 +105,8 @@ class AIPlayer(Player):
         allMoves = game.getMoves(self)
         allMoves[0].card.makeVisible()
         print("\t", allMoves[0])
-        return allMoves[0].make()
+        suitChange = allMoves[0].make()
+        if suitChange is not None: game.suitChange = suitChange
 
 class HumanPlayer(Player):
     name = "you"
@@ -159,7 +160,12 @@ class HumanPlayer(Player):
             self.playerMove = -1
 
     def executeMove(self, game):
-        game.suitChange = game.getMoves(self)[self.playerMove-1].make()
+        selectedMove = game.getMoves(self)[self.playerMove-1]
+        suitChange = selectedMove.make()
+        if selectedMove.type =="play" and selectedMove.card.rank == 8:
+            game.suitChange = suitChange
+        else:
+            game.suitChange = None
 
 class Move:
     def __init__(self, card, fromPile, toPile, player, moveType):
