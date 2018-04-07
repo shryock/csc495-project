@@ -2,10 +2,11 @@ from model.FiniteStateMachine import *
 from model.cards import *
 from games.CrazyEights import *
 import time
+from view.CrazyEightsBoard import *
 
 def returnTrue(): return True
 
-class CrazyEightsFSM(CrazyEights):
+class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
 
     NUMBER_AI_PLAYERS = 3
     ROUND_NUMBER_MAX = 400
@@ -70,11 +71,11 @@ class CrazyEightsFSM(CrazyEights):
 
 def __main__():
     
-    try:
-        game = CrazyEightsFSM()
-    except:
-        print("\n\nGame Ended unexpectedly.\n")
-        exit()
+#    try:
+    game = CrazyEightsFSM()
+    # except:
+        # print("\n\nGame Ended unexpectedly.\n")
+        # exit()
 
 if __name__ == '__main__':
     __main__()
