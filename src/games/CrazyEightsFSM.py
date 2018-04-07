@@ -4,14 +4,10 @@ from games.CrazyEights import *
 import time
 from view.CrazyEightsBoard import *
 
-def returnTrue(): return True
-
 class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
 
     NUMBER_AI_PLAYERS = 3
     ROUND_NUMBER_MAX = 400
-
-    def true(self) : return True
 
     def __init__(self):
         self.fsm = FiniteStateMachine()
@@ -19,8 +15,8 @@ class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
         play = Play("Playing CrazyEights", self.run)
         goal = Goal("Ended CrazyEights")
 
-        Transition(start, self.true, play)
-        Transition(play, self.true, goal)
+        Transition(start, lambda: True, play)
+        Transition(play, lambda: True, goal)
 
         self.fsm.addState(start)
         self.fsm.addState(play)
@@ -45,7 +41,7 @@ class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
         humanLoss = Fail("Lose", self.playerLoses)
 
         # Begin player loop
-        startToHuman = Transition(start, returnTrue, humanTurn)
+        startToHuman = Transition(start, lambda: True, humanTurn)
 
         #Defines win/loss conditions
         Transition(humanTurn, self.checkWinCondition, humanWin, human)
@@ -54,10 +50,10 @@ class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
         Transition(aiPlayer3Turn, self.checkWinCondition, humanLoss, aiPlayer3)
 
         # Defines the player loop
-        Transition(humanTurn, returnTrue, aiPlayer1Turn)
-        Transition(aiPlayer1Turn, returnTrue, aiPlayer2Turn)
-        Transition(aiPlayer2Turn, returnTrue, aiPlayer3Turn)
-        Transition(aiPlayer3Turn, returnTrue, humanTurn)
+        Transition(humanTurn, lambda: True, aiPlayer1Turn)
+        Transition(aiPlayer1Turn, lambda: True, aiPlayer2Turn)
+        Transition(aiPlayer2Turn, lambda: True, aiPlayer3Turn)
+        Transition(aiPlayer3Turn, lambda: True, humanTurn)
 
         playerFSM.addState(start)
         playerFSM.addState(humanTurn)
