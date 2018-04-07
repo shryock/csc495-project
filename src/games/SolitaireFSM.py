@@ -2,12 +2,7 @@ from model.cards import *
 from games.Solitaire import *
 from model.FiniteStateMachine import *
 
-def returnTrue():
-    return True
-
 class SolitaireFSM(Solitaire):
-    def true(self):
-        return True
 
     def __init__(self):
         self.fsm = FiniteStateMachine()
@@ -15,8 +10,8 @@ class SolitaireFSM(Solitaire):
         play = Play("Playing Solitaire", self.run)
         goal = Goal("Ended Solitaire")
         
-        Transition(start, self.true, play)
-        Transition(play, self.true, goal)
+        Transition(start, lambda: True, play)
+        Transition(play, lambda: True, goal)
         
         self.fsm.addState(start)
         self.fsm.addState(play)
@@ -33,12 +28,12 @@ class SolitaireFSM(Solitaire):
         errorState = Play("Invalid Move" )
         humanWin = Goal("Win", self.announceWinner)
         
-        Transition(start, self.true, humanTurn)
+        Transition(start, lambda: True, humanTurn)
         
         # Defines the player loop
         Transition(humanTurn, self.checkValid, humanTurn)
         Transition(humanTurn, lambda: not self.checkValid, errorState)
-        Transition(errorState,  self.true,  humanTurn)
+        Transition(errorState,  lambda: True,  humanTurn)
 
         #Defines win/loss conditions
         Transition(humanTurn, self.checkWinCondition, humanWin)
@@ -50,7 +45,10 @@ class SolitaireFSM(Solitaire):
         playerFSM.run()
 
 def __main__():
-    game = SolitaireFSM()
+    try:
+        game = SolitaireFSM()
+    except:
+        Logger.close()
 
 if __name__ == '__main__':
     __main__()

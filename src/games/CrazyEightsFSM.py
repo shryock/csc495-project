@@ -67,11 +67,12 @@ class CrazyEightsFSM(CrazyEights, CrazyEightsBoard):
 
 def __main__():
     
-#    try:
-    game = CrazyEightsFSM()
-    # except:
-        # print("\n\nGame Ended unexpectedly.\n")
-        # exit()
+    try:
+        game = CrazyEightsFSM()
+    except:
+        print("\n\nGame Ended unexpectedly.\n")
+        Logger.close()
+        exit()
 
 if __name__ == '__main__':
     __main__()
