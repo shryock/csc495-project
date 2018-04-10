@@ -13,18 +13,18 @@ class State():
         self.trans.append(Struct(end=end, guard=guard))
         return self
 
-    def step(self, payload):
+    def step(self, game):
         for tran in self.trans:
-            if tran.guard(payload):
-                self.onExit(payload)
-                tran.end.onEntry(payload)
+            if tran.guard(game):
+                self.onExit(game)
+                tran.end.onEntry(game)
                 return tran.end
         return self
 
     #TODO: Make generic onEntry and onExit
-    def onEntry(self, payload): pass
+    def onEntry(self, game): pass
 
-    def onExit(self, payload): pass
+    def onExit(self, game): pass
 
     def quit(self):
         return False
@@ -36,17 +36,11 @@ class EndState(State):
 
 
 class StartState(State):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.setup()
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.setup()
 
-    def onExit(self, payload):
-        if payload.game:
-            payload.game.printBanner()
-        else:
-            raise UndefinedGameException
+    def onExit(self, game):
+        game.printBanner()
 
 
 class PlayerState(State):
@@ -55,12 +49,9 @@ class PlayerState(State):
         self.machine = machine
         self.trans = []
 
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.currentPlayer = int(self.name[1] - 1)
-            self.machine.run(payload)
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.currentPlayer = int(self.name[1] - 1)
+        self.machine.run(game)
 
 
 class PlayState(State):
@@ -77,53 +68,36 @@ class PlayState(State):
             states[i].addTransition(quit, rulebook.quit)
             states[i].addTransition(states[(i + 1) % len(states)], rulebook.true)
 
-    def onEntry(self, payload):
-        if payload.game:
-            self.createPlayMachine(payload.game.players, payload.game.rulebook).run(payload)
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        self.createPlayMachine(game.players, game.rulebook).run(game)
 
 
 class MoveState(State):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.printBoard()
-            payload.game.printMoves()
-            payload.game.chooseMove()
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        if game.playerIsHuman():
+            game.printBoard()
+            game.printMoves()
+        game.chooseMove()
 
 
 class ValidMoveState(EndState):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.executeMove()
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.executeMove()
 
 
 class InvalidMoveState(State):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.printInvalidMoveMessage()
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.printInvalidMoveMessage()
 
 
 class GoalState(EndState):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.goal()
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.goal()
 
 
 class QuitState(EndState):
-    def onEntry(self, payload):
-        if payload.game:
-            payload.game.quit = True
-        else:
-            raise UndefinedGameException
+    def onEntry(self, game):
+        game.quit = True
 
 
 class Machine():
@@ -139,14 +113,13 @@ class Machine():
         self.states[state.name] = state
         return self.states[state.name]
 
-    def run(self, payload=None):
-        payload = payload or Struct()
+    def run(self, game):
         state = self.start
 
-        state.onEntry(payload)
+        state.onEntry(game)
         while not state.quit():
-            state = state.step(payload)
-        state.onExit(payload)
+            state = state.step(game)
+        state.onExit(game)
 
 
 class GameMachine(Machine):
@@ -166,7 +139,7 @@ class GameMachine(Machine):
         self.states['PLAY'].addTransition(self.states['GOAL'], game.rulebook.true)
 
     def start(self):
-        self.run(Struct(game=self.game))
+        self.run(self.game)
 
 
 class PlayerMachine(Machine):

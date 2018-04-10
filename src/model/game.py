@@ -1,19 +1,15 @@
 import random
 
-class UndefinedGameException(Exception):
-    def __init__(self, message="Game parameter is undefined"):
-        self.message = message
-
-
 class Game():
     def __init__(self):
         self.name = 'Game'
         self.board = None
         self.rulebook = None
         self.players = []
+        self.moves = {}
 
         self.currentPlayer = -1
-        self.moves = []
+        self.playerMoves = []
         self.selectedMove = -1
         self.quit = False
 
@@ -27,7 +23,11 @@ class Game():
         self.selectedMove = self.players[currentPlayer].chooseMove()
 
     def executeMove(self):
-        raise NotImplementedError
+        move = self.playerMoves[self.selectedMove]
+        self.moves[move.type](move)
+
+    def playerIsHuman(self):
+        return self.players[self.currentPlayer].isA(HumanPlayer)
 
     def printbanner(self):
         Logger.log(''.center(50))
@@ -40,7 +40,7 @@ class Game():
     def printMoves(self):
         self.moves = self.rulebook.getMoves(self)
         for i in range(len(self.moves)):
-            Logger.log('{:>4}. {}'.format(i, self.moves[i]))
+            Logger.log('{:>4}. {}'.format(i + 1, repr(self.moves[i])))
 
     def printInvalidMoveMessage(self):
         Logger.log('Invalid move selection. Please try again.')
@@ -58,13 +58,14 @@ class Card():
 
     def __repr__(self):
         if self.visible:
-            return '{:>3}{}'.format(self.rank, suitCharacters[self.suit])
+            return '{}{}'.format(self.rank, suitCharacters[self.suit])
 
     def makeVisible(self):
         self.visible = True
 
     def makeInvisible(self):
         self.visible = False
+
 
 class Deck():
     def __init__(self):
@@ -86,7 +87,8 @@ class Deck():
 
 
 class Pile():
-    def __init__(self, cards=None):
+    def __init__(self, name, cards=None):
+        self.name = name
         self.cards = cards or []
 
     def __repr__(self):
@@ -139,17 +141,35 @@ class Board():
         raise NotImplementedError
 
 
+class Move():
+    def __init__(self, cardIndex, fromPile, toPile, moveType):
+        self.cardIndex = cardIndex
+        self.fromPile = fromPile
+        self.toPile = toPile
+        self.moveType = moveType
+
+    def __repr__(self):
+        if moveType == 'Draw':
+            return 'Draw card from deck'
+        elif moveType == 'Quit':
+            return 'Quit'
+        else:
+            return '{} {} from {} to {}'.format(
+                self.moveType, repr(self.fromPile[self.cardIndex]),
+                fromPile.name, toPile.name)
+
+
 class Rulebook():
-    def true(self, payload):
+    def true(self, game):
         return true
 
-    def validMove(self, payload):
-        raise NotImplementedError
+    def validMove(self, game):
+        return game.selectedMove >= 0 and game.selectedMove < len(game.playerMoves)
 
-    def win(self, payload):
-        raise NotImplementedError
+    def quit(self, game):
+        return game.selectedMove == len(game.playerMoves) - 1
 
-    def quit(self, payload):
+    def win(self, game):
         raise NotImplementedError
 
     def getMoves(self, game):
@@ -158,7 +178,10 @@ class Rulebook():
 
 class Player():
     def __init__(self):
-        self.hand = Pile()
+        self.hand = Pile('Hand')
+
+    def isA(self, type):
+        return isinstance(self, type)
 
     def receiveCard(self, card):
         raise NotImplementedError
@@ -175,7 +198,7 @@ class HumanPlayer(Player):
     def chooseMove(self, game):
         try:
             Logger.log('Choose your next move: ')
-            selectedMove = int(input())
+            selectedMove = int(input()) - 1
             Logger.log(str(selectedMove))
         except ValueError:
             selectedMove = -1
@@ -188,4 +211,4 @@ class AIPlayer(Player):
         self.hand.receiveCard(card)
 
     def chooseMove(self, game):
-        raise NotImplementedError
+        return 0
