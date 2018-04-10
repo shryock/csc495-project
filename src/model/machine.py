@@ -94,7 +94,7 @@ class MoveState(State):
             raise UndefinedGameException
 
 
-class ValidMoveState(State):
+class ValidMoveState(EndState):
     def onEntry(self, payload):
         if payload.game:
             payload.game.executeMove()
