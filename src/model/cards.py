@@ -144,10 +144,10 @@ class Pile:
         self = otherPile.getContents()
         self.makeAllCardsInvisible()
         self.shuffle()
-        
+
     def shuffle(self):
         random.shuffle(self.getContents())
-        
+
 class Player:
     name = ""
 
