@@ -1,5 +1,5 @@
-from util import Struct
-from game import *
+from model.util import Struct
+from model.game import *
 
 class State():
     def __init__(self, name):
@@ -21,7 +21,6 @@ class State():
                 return tran.end
         return self
 
-    #TODO: Make generic onEntry and onExit
     def onEntry(self, game): pass
 
     def onExit(self, game): pass
@@ -37,9 +36,6 @@ class EndState(State):
 
 class StartState(State):
     def onEntry(self, game):
-        game.setup()
-
-    def onExit(self, game):
         game.printBanner()
 
 
@@ -50,13 +46,17 @@ class PlayerState(State):
         self.trans = []
 
     def onEntry(self, game):
-        game.currentPlayer = int(self.name[1] - 1)
+        game.currentPlayer = int(self.name[1]) - 1
         self.machine.run(game)
 
 
 class PlayState(State):
     def createPlayMachine(self, players, rulebook):
         self.machine = Machine()
+
+        for player in players:
+            player.machine = PlayerMachine(rulebook)
+
         states = [self.machine.addState(
                     PlayerState('P{}'.format(i + 1), players[i].machine))
                     for i in range(len(players))]
@@ -67,6 +67,8 @@ class PlayState(State):
             states[i].addTransition(win, rulebook.win)
             states[i].addTransition(quit, rulebook.quit)
             states[i].addTransition(states[(i + 1) % len(states)], rulebook.true)
+
+        return self.machine
 
     def onEntry(self, game):
         self.createPlayMachine(game.players, game.rulebook).run(game)
@@ -97,7 +99,7 @@ class GoalState(EndState):
 
 class QuitState(EndState):
     def onEntry(self, game):
-        game.quit = True
+        game.printQuit()
 
 
 class Machine():
@@ -125,6 +127,7 @@ class Machine():
 class GameMachine(Machine):
     def __init__(self, game):
         self.game = game
+        self.game.setup()
         self.createMachine()
 
     def createMachine(self):
@@ -135,10 +138,10 @@ class GameMachine(Machine):
         }
         self.start = self.states['START']
 
-        self.states['START'].addTransition(self.states['PLAY'], game.rulebook.true)
-        self.states['PLAY'].addTransition(self.states['GOAL'], game.rulebook.true)
+        self.states['START'].addTransition(self.states['PLAY'], self.game.rulebook.true)
+        self.states['PLAY'].addTransition(self.states['GOAL'], self.game.rulebook.true)
 
-    def start(self):
+    def startGame(self):
         self.run(self.game)
 
 
