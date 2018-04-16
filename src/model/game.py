@@ -13,6 +13,9 @@ class Game():
         self.players = []
         self.moves = {}
 
+        self.moveCount = 0
+        self.showRounds = False
+        self.invalid = False
         self.currentPlayer = -1
         self.playerMoves = []
         self.selectedMove = -1
@@ -22,7 +25,8 @@ class Game():
         raise NotImplementedError
 
     def goal(self):
-        raise NotImplementedError
+        if not self.quit:
+            log('Player {} has won the game'.format(self.currentPlayer + 1))
 
     def quitGame(self, move):
         self.quit = True
@@ -32,6 +36,8 @@ class Game():
 
     def executeMove(self):
         move = self.playerMoves[self.selectedMove]
+        if not self.playerIsHuman():
+            log(' ' * 4, repr(move), '\n')
         self.moves[move.moveType](move)
 
     def playerIsHuman(self):
@@ -42,14 +48,28 @@ class Game():
         log('|', self.name.center(48), '|')
         log('-' * 50, '\n')
 
+    def printRound(self):
+        if self.showRounds and self.currentPlayer == 0 and not self.invalid:
+            roundNum = int(self.moveCount / len(self.players) + 1)
+            log(' Round {} '.format(roundNum).center(50, '='), '\n')
+
+    def printHand(self):
+        if len(self.players[self.currentPlayer].hand):
+            log("Player {}'s Hand: {}\n".format(
+                self.currentPlayer + 1,
+                repr(self.players[self.currentPlayer].hand)))
+
     def printBoard(self):
-        log(repr(self.board), '\n')
+        if self.playerIsHuman():
+            log(repr(self.board), '\n')
 
     def printMoves(self):
-        self.playerMoves = self.rulebook.getMoves(self)
+        self.playerMoves  = self.rulebook.getMoves(self)
         self.playerMoves += [Move(None, None, None, 'QUIT')]
-        for i in range(len(self.playerMoves)):
-            log('{:>4}. {}'.format(i + 1, repr(self.playerMoves[i])))
+        if self.playerIsHuman():
+            for i in range(len(self.playerMoves)):
+                log('{:>4}. {}'.format(i + 1, repr(self.playerMoves[i])))
+            log('')
 
     def printQuit(self):
         log('Player {} has quit the game'.format(self.currentPlayer + 1))
@@ -73,6 +93,9 @@ class Card():
             return '{}{}'.format(self.rank, suitCharacters[self.suit])
         else:
             return '[ ]'
+
+    def face(self):
+        return '{}{}'.format(self.rank, suitCharacters[self.suit])
 
     def makeVisible(self):
         self.visible = True
@@ -120,9 +143,15 @@ class Pile():
 
     def indexOf(self, card):
         for i in range(len(self.cards)):
-            if repr(self.cards[i]) == card:
+            if self.cards[i].face() == card:
                 return i
         return -1
+
+    def remove(self, index):
+        if index in range(len(self.cards)):
+            return self.cards.pop(index)
+        else:
+            return None
 
     def receiveCard(self, card):
         self.cards.append(card)
@@ -184,7 +213,7 @@ class Move():
         else:
             return '{} {} from {} to {}'.format(
                 self.moveType.title(),
-                repr(self.fromPile[self.cardIndex]),
+                self.fromPile[self.cardIndex].face(),
                 self.fromPile.name,
                 self.toPile.name)
 
@@ -210,6 +239,9 @@ class Player():
     def __init__(self):
         self.hand = Pile('Hand')
 
+    def __repr__(self):
+        return '{{type: {}, hand: {}}}'.format(self.__class__.__name__, repr(self.hand))
+
     def isA(self, type):
         return isinstance(self, type)
 
@@ -217,6 +249,9 @@ class Player():
         raise NotImplementedError
 
     def chooseMove(self):
+        raise NotImplementedError
+
+    def chooseSuit(self):
         raise NotImplementedError
 
 
@@ -227,13 +262,34 @@ class HumanPlayer(Player):
 
     def chooseMove(self):
         try:
-            log('\n', 'Choose your next move: ')
+            log('Choose your next move: ')
             selectedMove = int(input()) - 1
-            log(str(selectedMove), printLog=False)
+            log(str(selectedMove + 1), printLog=False)
         except ValueError:
             selectedMove = -1
+        log('')
         return selectedMove
 
+    def chooseSuit(self):
+        suitOptions = ''
+        for i in range(len(suits)):
+            suitOptions += '{:>4}. {}\n'.format(i + 1, suitCharacters[suits[i]])
+
+        selectedSuit = -1
+        while selectedSuit < 0:
+            log(suitOptions, '\n', 'Choose suit to switch to:')
+            try:
+                selectedSuit = int(input()) - 1
+                log(str(selectedSuit + 1), printLog=False)
+            except ValueError:
+                selectedSuit = -1
+            log('')
+
+            if not selectedSuit in range(0, 4):
+                log('Invalid suit selection. Please try again.', '\n')
+
+        log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
+        return selectedSuit
 
 class AIPlayer(Player):
     def receiveCard(self, card):
@@ -242,3 +298,8 @@ class AIPlayer(Player):
 
     def chooseMove(self):
         return 0
+
+    def chooseSuit(self):
+        selectedSuit = random.choice(range(0, 4))
+        log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
+        return selectedSuit

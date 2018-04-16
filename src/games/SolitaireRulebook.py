@@ -19,7 +19,7 @@ class SolitaireRulebook(Rulebook):
 
         if len(game.board.deck):
             moves += [Move(-1, None, None, 'DRAW')]
-        else:
+        elif len(game.board.waste):
             moves += [Move(-1, None, None, 'RESHUFFLE')]
 
         return moves
@@ -73,13 +73,13 @@ class SolitaireRulebook(Rulebook):
         for card in stack:
             if card.visible:
                 if card == stack.top():
-                    cards += [PlayableCard(repr(card), True, stack)]
+                    cards += [PlayableCard(card.face(), True, stack)]
                 else:
-                    cards += [PlayableCard(repr(card), False, stack)]
+                    cards += [PlayableCard(card.face(), False, stack)]
         return cards
 
     def getWastePlays(self, pile):
-        return [PlayableCard(repr(pile.top()), True, pile)] if len(pile) else []
+        return [PlayableCard(pile.top().face(), True, pile)] if len(pile) else []
 
 
 class PlayableCard(object):

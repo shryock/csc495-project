@@ -76,19 +76,23 @@ class PlayState(State):
 
 class MoveState(State):
     def onEntry(self, game):
-        if game.playerIsHuman():
-            game.printBoard()
-            game.printMoves()
+        game.printRound()
+        game.printBoard()
+        game.printHand()
+        game.printMoves()
         game.chooseMove()
 
 
 class ValidMoveState(EndState):
     def onEntry(self, game):
+        game.invalid = False
+        game.moveCount += 1
         game.executeMove()
 
 
 class InvalidMoveState(State):
     def onEntry(self, game):
+        game.invalid = True
         game.printInvalidMoveMessage()
 
 

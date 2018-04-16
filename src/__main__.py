@@ -1,5 +1,6 @@
-import games.SolitaireFSM as sol
-import games.CrazyEightsFSM as crazy
+from games.Solitaire import Solitaire
+from games.CrazyEights import CrazyEights
+from model.machine import GameMachine
 
 def __main__():
     print("""
@@ -18,15 +19,20 @@ def __main__():
     Which would you like to play?
     1) Solitaire
     2) Crazy Eights
-
     """)
 
-    gameChoice = int(input())
-    if gameChoice == 1:
-        sol.__main__()
-    elif gameChoice == 2:
-        crazy.__main__()
-    else:
+    try:
+        gameChoice = int(input())
+        if gameChoice == 1:
+            game = GameMachine(Solitaire())
+        elif gameChoice == 2:
+            game = GameMachine(CrazyEights())
+        else:
+            raise ValueError()
+
+        print()
+        game.startGame()
+    except ValueError:
         print("Invalid Choice... Goodbye.")
 
 if __name__ == '__main__':

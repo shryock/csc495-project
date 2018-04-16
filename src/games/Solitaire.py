@@ -24,9 +24,6 @@ class Solitaire(Game):
             'QUIT': self.quitGame
         }
 
-    def goal(self):
-        pass
-
     def move(self, move):
         move.fromPile.giveSetOfCards(move.cardIndex, move.toPile)
 

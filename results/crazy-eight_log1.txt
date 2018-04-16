@@ -1,0 +1,241 @@
+--------------------------------------------------
+|                  Crazy Eights                  |
+--------------------------------------------------
+
+==================== Round 1 =====================
+
+Deck: [ ]
+Play Pile: 10♣
+
+Player 1's Hand: [3♣, 2♣, Q♠, 3♠, 4♥]
+
+   1. Move 3♣ from Hand to Play Pile
+   2. Move 2♣ from Hand to Play Pile
+   3. Draw card from Deck
+   4. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ], [ ], [ ], [ ], [ ]]
+
+    Move K♣ from Hand to Play Pile
+
+Player 3's Hand: [[ ], [ ], [ ], [ ], [ ]]
+
+    Move K♠ from Hand to Play Pile
+
+Player 4's Hand: [[ ], [ ], [ ], [ ], [ ]]
+
+    Draw card from Deck
+
+==================== Round 2 =====================
+
+Deck: [ ]
+Play Pile: K♠
+
+Player 1's Hand: [2♣, Q♠, 3♠, 4♥]
+
+   1. Move Q♠ from Hand to Play Pile
+   2. Move 3♠ from Hand to Play Pile
+   3. Draw card from Deck
+   4. Quit
+
+Choose your next move: 
+1
+
+Player 2's Hand: [[ ], [ ], [ ], [ ]]
+
+    Move 8♠ from Hand to Play Pile
+
+Suit has been changed to Spades
+
+Player 3's Hand: [[ ], [ ], [ ], [ ]]
+
+    Move 6♠ from Hand to Play Pile
+
+Player 4's Hand: [[ ], [ ], [ ], [ ], [ ], [ ]]
+
+    Move 6♥ from Hand to Play Pile
+
+==================== Round 3 =====================
+
+Deck: [ ]
+Play Pile: 6♥
+
+Player 1's Hand: [2♣, Q♠, 4♥]
+
+   1. Move 4♥ from Hand to Play Pile
+   2. Draw card from Deck
+   3. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ], [ ], [ ]]
+
+    Move 4♣ from Hand to Play Pile
+
+Player 3's Hand: [[ ], [ ], [ ]]
+
+    Draw card from Deck
+
+Player 4's Hand: [[ ], [ ], [ ], [ ], [ ]]
+
+    Move 5♣ from Hand to Play Pile
+
+==================== Round 4 =====================
+
+Deck: [ ]
+Play Pile: 5♣
+
+Player 1's Hand: [2♣, Q♠]
+
+   1. Move 2♣ from Hand to Play Pile
+   2. Draw card from Deck
+   3. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ], [ ]]
+
+    Move J♣ from Hand to Play Pile
+
+Player 3's Hand: [[ ], [ ], [ ], [ ]]
+
+    Move J♦ from Hand to Play Pile
+
+Player 4's Hand: [[ ], [ ], [ ], [ ]]
+
+    Move J♥ from Hand to Play Pile
+
+==================== Round 5 =====================
+
+Deck: [ ]
+Play Pile: J♥
+
+Player 1's Hand: [Q♠]
+
+   1. Draw card from Deck
+   2. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ]]
+
+    Draw card from Deck
+
+Player 3's Hand: [[ ], [ ], [ ]]
+
+    Move 5♥ from Hand to Play Pile
+
+Player 4's Hand: [[ ], [ ], [ ]]
+
+    Move 10♥ from Hand to Play Pile
+
+==================== Round 6 =====================
+
+Deck: [ ]
+Play Pile: 10♥
+
+Player 1's Hand: [Q♠, 4♦]
+
+   1. Draw card from Deck
+   2. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ], [ ]]
+
+    Draw card from Deck
+
+Player 3's Hand: [[ ], [ ]]
+
+    Draw card from Deck
+
+Player 4's Hand: [[ ], [ ]]
+
+    Move 8♣ from Hand to Play Pile
+
+Suit has been changed to Spades
+
+==================== Round 7 =====================
+
+Deck: [ ]
+Play Pile: 8♠
+
+Player 1's Hand: [Q♠, 4♦, 8♦]
+
+   1. Move Q♠ from Hand to Play Pile
+   2. Move 8♦ from Hand to Play Pile
+   3. Draw card from Deck
+   4. Quit
+
+Choose your next move: 
+0
+
+Player 2's Hand: [[ ], [ ], [ ]]
+
+    Draw card from Deck
+
+Player 3's Hand: [[ ], [ ], [ ]]
+
+    Move Q♣ from Hand to Play Pile
+
+Player 4's Hand: [[ ]]
+
+    Draw card from Deck
+
+==================== Round 8 =====================
+
+Deck: [ ]
+Play Pile: Q♣
+
+Player 1's Hand: [4♦, 8♦]
+
+   1. Move 8♦ from Hand to Play Pile
+   2. Draw card from Deck
+   3. Quit
+
+Choose your next move: 
+0
+
+   1. ♥
+   2. ♠
+   3. ♣
+   4. ♦
+
+Choose suit to switch to:
+
+Suit has been changed to Diamonds
+
+Player 2's Hand: [[ ], [ ], [ ], [ ]]
+
+    Move 7♦ from Hand to Play Pile
+
+Player 3's Hand: [[ ], [ ]]
+
+    Move 2♦ from Hand to Play Pile
+
+Player 4's Hand: [[ ], [ ]]
+
+    Move 5♦ from Hand to Play Pile
+
+==================== Round 9 =====================
+
+Deck: [ ]
+Play Pile: 5♦
+
+Player 1's Hand: [4♦]
+
+   1. Move 4♦ from Hand to Play Pile
+   2. Draw card from Deck
+   3. Quit
+
+Choose your next move: 
+0
+
+Player 1 has won the game

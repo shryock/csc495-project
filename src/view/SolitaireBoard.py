@@ -30,7 +30,7 @@ class SolitaireBoard(Board):
         self.deck = self.piles[12]
 
         for i in range(len(self.stacks)):
-            self.stacks[i].name = "Stack%d" % i
+            self.stacks[i].name = 'Stack {}'.format(i + 1)
             self.stacks[i].top().visible = True
         for i in range(len(self.suitPiles)):
             self.suitPiles[i].name = suits[i]
