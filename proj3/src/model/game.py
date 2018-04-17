@@ -1,5 +1,5 @@
-from model.Logger import *
 import random
+import model.Logger as Logger
 
 suits = ["Hearts", "Spades", "Clubs", "Diamonds"]
 ranks = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
@@ -26,7 +26,8 @@ class Game():
 
     def goal(self):
         if not self.quit:
-            log('Player {} has won the game'.format(self.currentPlayer + 1))
+            Logger.log('Player {} has won the game'.format(self.currentPlayer + 1))
+        self.closeLogger()
 
     def quitGame(self, move):
         self.quit = True
@@ -37,45 +38,48 @@ class Game():
     def executeMove(self):
         move = self.playerMoves[self.selectedMove]
         if not self.playerIsHuman():
-            log(' ' * 4, repr(move), '\n')
+            Logger.log(' ' * 4, repr(move), '\n')
         self.moves[move.moveType](move)
 
     def playerIsHuman(self):
         return self.players[self.currentPlayer].isA(HumanPlayer)
 
     def printBanner(self):
-        log('-' * 50)
-        log('|', self.name.center(48), '|')
-        log('-' * 50, '\n')
+        Logger.log('-' * 50)
+        Logger.log('|', self.name.center(48), '|')
+        Logger.log('-' * 50, '\n')
 
     def printRound(self):
         if self.showRounds and self.currentPlayer == 0 and not self.invalid:
             roundNum = int(self.moveCount / len(self.players) + 1)
-            log(' Round {} '.format(roundNum).center(50, '='), '\n')
+            Logger.log(' Round {} '.format(roundNum).center(50, '='), '\n')
 
     def printHand(self):
         if len(self.players[self.currentPlayer].hand):
-            log("Player {}'s Hand: {}\n".format(
+            Logger.log("Player {}'s Hand: {}\n".format(
                 self.currentPlayer + 1,
                 repr(self.players[self.currentPlayer].hand)))
 
     def printBoard(self):
         if self.playerIsHuman():
-            log(repr(self.board), '\n')
+            Logger.log(repr(self.board), '\n')
 
     def printMoves(self):
         self.playerMoves  = self.rulebook.getMoves(self)
         self.playerMoves += [Move(None, None, None, 'QUIT')]
         if self.playerIsHuman():
             for i in range(len(self.playerMoves)):
-                log('{:>4}. {}'.format(i + 1, repr(self.playerMoves[i])))
-            log('')
+                Logger.log('{:>4}. {}'.format(i + 1, repr(self.playerMoves[i])))
+            Logger.log('')
 
     def printQuit(self):
-        log('Player {} has quit the game'.format(self.currentPlayer + 1))
+        Logger.log('Player {} has quit the game'.format(self.currentPlayer + 1))
 
     def printInvalidMoveMessage(self):
-        log('Invalid move selection. Please try again.', '\n')
+        Logger.log('Invalid move selection. Please try again.', '\n')
+
+    def closeLogger(self):
+        Logger.close()
 
 
 class Card():
@@ -262,12 +266,14 @@ class HumanPlayer(Player):
 
     def chooseMove(self):
         try:
-            log('Choose your next move: ')
-            selectedMove = int(input()) - 1
-            log(str(selectedMove + 1), printLog=False)
+            Logger.log('Choose your next move:')
+            userInput = input()
+            selectedMove = int(userInput) - 1
+            Logger.log(str(selectedMove + 1), printLog=False)
         except ValueError:
             selectedMove = -1
-        log('')
+            Logger.log(userInput)
+        Logger.log('')
         return selectedMove
 
     def chooseSuit(self):
@@ -277,18 +283,20 @@ class HumanPlayer(Player):
 
         selectedSuit = -1
         while selectedSuit < 0:
-            log(suitOptions, '\n', 'Choose suit to switch to:')
+            Logger.log(suitOptions, '\n', 'Choose suit to switch to:')
             try:
-                selectedSuit = int(input()) - 1
-                log(str(selectedSuit + 1), printLog=False)
+                userInput = input()
+                selectedSuit = int(userInput) - 1
+                Logger.log(str(selectedSuit + 1), printLog=False)
             except ValueError:
                 selectedSuit = -1
-            log('')
+                Logger.log(userInput)
+            Logger.log('')
 
             if not selectedSuit in range(0, 4):
-                log('Invalid suit selection. Please try again.', '\n')
+                Logger.log('Invalid suit selection. Please try again.', '\n')
 
-        log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
+        Logger.log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
         return selectedSuit
 
 class AIPlayer(Player):
@@ -301,5 +309,5 @@ class AIPlayer(Player):
 
     def chooseSuit(self):
         selectedSuit = random.choice(range(0, 4))
-        log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
+        Logger.log('Suit has been changed to {}\n'.format(suits[selectedSuit]))
         return selectedSuit

@@ -17,7 +17,27 @@
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
+Choose your next move:
+0
+
+Invalid move selection. Please try again.
+
+ [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
+
+  Q♦  [ ]  [ ]  [ ]  [ ]  [ ]  [ ]
+       2♦  [ ]  [ ]  [ ]  [ ]  [ ]
+            6♠  [ ]  [ ]  [ ]  [ ]
+                 1♠  [ ]  [ ]  [ ]
+                      J♦  [ ]  [ ]
+                           K♦  [ ]
+                                4♣
+
+   1. Move 1♠ from Stack 4 to Stack 2
+   2. Move 1♠ from Stack 4 to Spades
+   3. Draw card from Deck
+   4. Quit
+
+Choose your next move:
 -1
 
 Invalid move selection. Please try again.
@@ -37,8 +57,8 @@ Invalid move selection. Please try again.
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
--2
+Choose your next move:
+9
 
 Invalid move selection. Please try again.
 
@@ -57,8 +77,8 @@ Invalid move selection. Please try again.
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-8
+Choose your next move:
+a
 
 Invalid move selection. Please try again.
 
@@ -77,7 +97,8 @@ Invalid move selection. Please try again.
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
+Choose your next move:
+
 
 Invalid move selection. Please try again.
 
@@ -96,27 +117,8 @@ Invalid move selection. Please try again.
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-
-Invalid move selection. Please try again.
-
- [ ]  [ ]  [ ]  [ ]       [ ]  [ ]
-
-  Q♦  [ ]  [ ]  [ ]  [ ]  [ ]  [ ]
-       2♦  [ ]  [ ]  [ ]  [ ]  [ ]
-            6♠  [ ]  [ ]  [ ]  [ ]
-                 1♠  [ ]  [ ]  [ ]
-                      J♦  [ ]  [ ]
-                           K♦  [ ]
-                                4♣
-
-   1. Move 1♠ from Stack 4 to Stack 2
-   2. Move 1♠ from Stack 4 to Spades
-   3. Draw card from Deck
-   4. Quit
-
-Choose your next move: 
-1
+Choose your next move:
+2
 
  [ ]   1♠  [ ]  [ ]       [ ]  [ ]
 
@@ -132,8 +134,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]       [ ]  [ ]
 
@@ -149,8 +151,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]       [ ]  [ ]
 
@@ -166,8 +168,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]       [ ]  [ ]
 
@@ -182,8 +184,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        4♥  [ ]
 
@@ -198,8 +200,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        K♣  [ ]
 
@@ -214,8 +216,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -230,8 +232,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        Q♠  [ ]
 
@@ -247,8 +249,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -264,8 +266,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -276,14 +278,14 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Show Stack 5
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -294,14 +296,14 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 8♠ from Stack 5 to Stack 2
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -312,14 +314,14 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Show Stack 5
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        7♣  [ ]
 
@@ -330,13 +332,13 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        2♥  [ ]
 
@@ -347,13 +349,13 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        3♥  [ ]
 
@@ -364,14 +366,14 @@ Choose your next move:
                           [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 3♥ from Waste to Stack 7
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        2♥  [ ]
 
@@ -387,8 +389,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        9♠  [ ]
 
@@ -404,8 +406,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        8♣  [ ]
 
@@ -421,8 +423,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
  [ ]   1♠  [ ]  [ ]        1♥  [ ]
 
@@ -439,8 +441,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]  [ ]        8♣  [ ]
 
@@ -456,8 +458,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]  [ ]       10♦  [ ]
 
@@ -473,8 +475,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]  [ ]        1♦  [ ]
 
@@ -491,8 +493,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   1♦       10♦  [ ]
 
@@ -509,8 +511,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦       10♦  [ ]
 
@@ -526,8 +528,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        8♦  [ ]
 
@@ -543,8 +545,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        4♦  [ ]
 
@@ -561,8 +563,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        8♦  [ ]
 
@@ -579,8 +581,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        8♦  [ ]
 
@@ -597,8 +599,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        8♦  [ ]
 
@@ -614,8 +616,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        6♥  [ ]
 
@@ -631,8 +633,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        3♠  [ ]
 
@@ -648,8 +650,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        9♣  [ ]
 
@@ -665,8 +667,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        9♦  [ ]
 
@@ -682,8 +684,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   2♦        3♦  [ ]
 
@@ -700,8 +702,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        9♦  [ ]
 
@@ -717,8 +719,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        7♠  [ ]
 
@@ -734,8 +736,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        8♥  [ ]
 
@@ -751,8 +753,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        Q♣  [ ]
 
@@ -768,8 +770,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦       10♥  [ ]
 
@@ -785,8 +787,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        J♠  [ ]
 
@@ -803,8 +805,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦       10♥  [ ]
 
@@ -821,8 +823,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        Q♣  [ ]
 
@@ -838,8 +840,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        5♠  [ ]
 
@@ -855,8 +857,8 @@ Choose your next move:
    1. Reshuffle Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦       [ ]  [ ]
 
@@ -872,8 +874,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        4♥  [ ]
 
@@ -889,8 +891,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        K♣  [ ]
 
@@ -906,8 +908,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        7♣  [ ]
 
@@ -923,8 +925,8 @@ Choose your next move:
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   1♥   1♠  [ ]   3♦        2♥  [ ]
 
@@ -942,8 +944,8 @@ Choose your next move:
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-1
+Choose your next move:
+2
 
   2♥   1♠  [ ]   3♦        7♣  [ ]
 
@@ -960,8 +962,8 @@ Choose your next move:
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        7♣  [ ]
 
@@ -972,13 +974,13 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        9♠  [ ]
 
@@ -989,14 +991,14 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 9♠ from Waste to Stack 1
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        7♣  [ ]
 
@@ -1007,13 +1009,13 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        8♣  [ ]
 
@@ -1024,13 +1026,13 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1041,13 +1043,13 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        8♦  [ ]
 
@@ -1058,14 +1060,14 @@ Choose your next move:
                       3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 8♦ from Waste to Stack 1
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1076,13 +1078,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        6♥  [ ]
 
@@ -1093,13 +1095,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        3♠  [ ]
 
@@ -1110,13 +1112,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        9♣  [ ]
 
@@ -1127,13 +1129,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        9♦  [ ]
 
@@ -1144,13 +1146,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        7♠  [ ]
 
@@ -1161,14 +1163,14 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
                            K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 7♠ from Waste to Stack 1
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        9♦  [ ]
 
@@ -1179,13 +1181,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        8♥  [ ]
 
@@ -1196,13 +1198,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        Q♣  [ ]
 
@@ -1213,13 +1215,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        5♠  [ ]
 
@@ -1230,13 +1232,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Reshuffle Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦       [ ]  [ ]
 
@@ -1247,13 +1249,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   3♥   1♠  [ ]   3♦        4♥  [ ]
 
@@ -1264,14 +1266,14 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 4♥ from Waste to Hearts
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦       [ ]  [ ]
 
@@ -1282,13 +1284,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦        K♣  [ ]
 
@@ -1299,13 +1301,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦        7♣  [ ]
 
@@ -1316,13 +1318,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦        8♣  [ ]
 
@@ -1333,13 +1335,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1350,13 +1352,13 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦        6♥  [ ]
 
@@ -1367,14 +1369,14 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
                            Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 6♥ from Waste to Stack 1
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1385,14 +1387,14 @@ Choose your next move:
   8♦                  3♣  [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-                           J♦     
+                           J♦
 
    1. Move 5♣ from Stack 5 to Stack 1
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1403,16 +1405,16 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Show Stack 5
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠  [ ]   3♦       10♦  [ ]
 
@@ -1423,16 +1425,16 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Move 1♣ from Stack 5 to Clubs
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦       10♦  [ ]
 
@@ -1443,16 +1445,16 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Show Stack 5
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦       10♦  [ ]
 
@@ -1463,15 +1465,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        3♠  [ ]
 
@@ -1482,15 +1484,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        9♣  [ ]
 
@@ -1501,15 +1503,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        9♦  [ ]
 
@@ -1520,15 +1522,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        8♥  [ ]
 
@@ -1539,15 +1541,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        Q♣  [ ]
 
@@ -1558,15 +1560,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        5♠  [ ]
 
@@ -1577,15 +1579,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Reshuffle Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦       [ ]  [ ]
 
@@ -1596,15 +1598,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        K♣  [ ]
 
@@ -1615,15 +1617,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        7♣  [ ]
 
@@ -1634,15 +1636,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        8♣  [ ]
 
@@ -1653,15 +1655,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦       10♦  [ ]
 
@@ -1672,15 +1674,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        3♠  [ ]
 
@@ -1691,15 +1693,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        9♣  [ ]
 
@@ -1710,15 +1712,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        9♦  [ ]
 
@@ -1729,15 +1731,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        8♥  [ ]
 
@@ -1748,15 +1750,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        Q♣  [ ]
 
@@ -1767,15 +1769,15 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
   4♥   1♠   1♣   3♦        5♠  [ ]
 
@@ -1786,14 +1788,14 @@ Choose your next move:
   8♦                      [ ]  [ ]
   7♠                       K♦  [ ]
   6♥                       Q♠   4♣
-  5♣                       J♦     
-  4♦                              
-  3♣                              
+  5♣                       J♦
+  4♦
+  3♣
 
    1. Reshuffle Deck
    2. Quit
 
-Choose your next move: 
-1
+Choose your next move:
+2
 
 Player 1 has quit the game

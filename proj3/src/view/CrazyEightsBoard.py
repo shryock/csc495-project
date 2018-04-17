@@ -1,4 +1,4 @@
-from model.cards import *
+from model.game import *
 
 class CrazyEightsBoard(Board):
     def __repr__(self):

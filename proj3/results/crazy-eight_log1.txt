@@ -15,7 +15,7 @@ Player 1's Hand: [3♣, 2♣, Q♠, 3♠, 4♥]
    4. Quit
 
 Choose your next move: 
-0
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ], [ ]]
 
@@ -41,8 +41,8 @@ Player 1's Hand: [2♣, Q♠, 3♠, 4♥]
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-1
+Choose your next move:
+2
 
 Player 2's Hand: [[ ], [ ], [ ], [ ]]
 
@@ -69,8 +69,8 @@ Player 1's Hand: [2♣, Q♠, 4♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 
@@ -95,8 +95,8 @@ Player 1's Hand: [2♣, Q♠]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ]]
 
@@ -120,8 +120,8 @@ Player 1's Hand: [Q♠]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ]]
 
@@ -145,8 +145,8 @@ Player 1's Hand: [Q♠, 4♦]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ]]
 
@@ -174,8 +174,8 @@ Player 1's Hand: [Q♠, 4♦, 8♦]
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 
@@ -200,8 +200,8 @@ Player 1's Hand: [4♦, 8♦]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
    1. ♥
    2. ♠
@@ -209,6 +209,7 @@ Choose your next move:
    4. ♦
 
 Choose suit to switch to:
+4
 
 Suit has been changed to Diamonds
 
@@ -235,7 +236,7 @@ Player 1's Hand: [4♦]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 1 has won the game

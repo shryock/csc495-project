@@ -21,19 +21,26 @@ def __main__():
     2) Crazy Eights
     """)
 
+    machine = None
+    
     try:
         gameChoice = int(input())
         if gameChoice == 1:
-            game = GameMachine(Solitaire())
+            machine = GameMachine(Solitaire())
         elif gameChoice == 2:
-            game = GameMachine(CrazyEights())
+            machine = GameMachine(CrazyEights())
         else:
             raise ValueError()
 
         print()
-        game.startGame()
+        machine.startGame()
     except ValueError:
-        print("Invalid Choice... Goodbye.")
+        print('Invalid Choice... Goodbye.')
+    except KeyboardInterrupt:
+        if machine and machine.game:
+            machine.game.closeLogger()
+        print('\nGame exited')
+
 
 if __name__ == '__main__':
     __main__()

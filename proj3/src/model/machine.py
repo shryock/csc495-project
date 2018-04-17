@@ -1,4 +1,4 @@
-from model.util import Struct
+from model.util import *
 from model.game import *
 
 class State():

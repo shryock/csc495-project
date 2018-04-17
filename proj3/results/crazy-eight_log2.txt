@@ -13,7 +13,21 @@ Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
+Choose your next move:
+0
+
+Invalid move selection. Please try again.
+
+Deck: [ ]
+Play Pile: 4♦
+
+Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
+
+   1. Move 4♥ from Hand to Play Pile
+   2. Draw card from Deck
+   3. Quit
+
+Choose your next move:
 -1
 
 Invalid move selection. Please try again.
@@ -27,8 +41,8 @@ Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
--2
+Choose your next move:
+5
 
 Invalid move selection. Please try again.
 
@@ -41,8 +55,8 @@ Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-4
+Choose your next move:
+a
 
 Invalid move selection. Please try again.
 
@@ -55,7 +69,8 @@ Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
+Choose your next move:
+
 
 Invalid move selection. Please try again.
 
@@ -68,21 +83,8 @@ Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-
-Invalid move selection. Please try again.
-
-Deck: [ ]
-Play Pile: 4♦
-
-Player 1's Hand: [3♣, 4♥, 6♠, K♣, J♥]
-
-   1. Move 4♥ from Hand to Play Pile
-   2. Draw card from Deck
-   3. Quit
-
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ], [ ]]
 
@@ -107,8 +109,8 @@ Player 1's Hand: [3♣, 6♠, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ]]
 
@@ -135,8 +137,8 @@ Player 1's Hand: [3♣, K♣, J♥]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 
@@ -164,8 +166,8 @@ Player 1's Hand: [3♣, K♣]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ]]
 
@@ -189,8 +191,8 @@ Player 1's Hand: [3♣, K♣, 3♠]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 
@@ -214,8 +216,8 @@ Player 1's Hand: [3♣, K♣, 3♠, 9♠]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ]]
 
@@ -239,8 +241,8 @@ Player 1's Hand: [3♣, K♣, 3♠, 9♠, K♦]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ], [ ]]
 
@@ -266,8 +268,8 @@ Player 1's Hand: [3♣, K♣, 3♠, 9♠, K♦, 8♦]
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ], [ ], [ ]]
 
@@ -294,8 +296,8 @@ Player 1's Hand: [3♣, K♣, 3♠, 9♠, 8♦]
    4. Draw card from Deck
    5. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ], [ ]]
 
@@ -320,8 +322,8 @@ Player 1's Hand: [3♣, K♣, 9♠, 8♦]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
    1. ♥
    2. ♠
@@ -329,6 +331,7 @@ Choose your next move:
    4. ♦
 
 Choose suit to switch to:
+3
 
 Suit has been changed to Clubs
 
@@ -356,8 +359,8 @@ Player 1's Hand: [3♣, K♣, 9♠]
    3. Draw card from Deck
    4. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 
@@ -382,8 +385,8 @@ Player 1's Hand: [K♣, 9♠]
    2. Draw card from Deck
    3. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ], [ ]]
 
@@ -407,8 +410,8 @@ Player 1's Hand: [9♠]
    1. Draw card from Deck
    2. Quit
 
-Choose your next move: 
-0
+Choose your next move:
+1
 
 Player 2's Hand: [[ ], [ ], [ ]]
 

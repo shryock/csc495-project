@@ -1,4 +1,4 @@
-from model.cards import *
+from model.game import *
 
 class SolitaireBoard(Board):
     def __repr__(self):
